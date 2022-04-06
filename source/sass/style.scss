@@ -1,1 +1,283 @@
-// Начните писать стили здесь
+// global styles
+:root{
+font-size: 0.875em;
+box-sizing: border-box;
+--die-color: #81B3D2;
+--invert-color: #ffffff;
+}
+
+*,
+::before,
+::after {
+  box-sizing:inherit;
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: "ptsans";
+ src: local("ptsans"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ptsansBold";
+ src: local("ptsansBold"), url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+body {
+  font-family: "ptsans", Arial, sans-serif;
+  background: #00ff00;
+}
+
+// text apparence
+.heading-text {
+  font-weight: bold;
+}
+.text-color-invert {
+  color: var(--invert-color);
+}
+
+
+.btn {
+  font-size: 1.5rem ;
+  font-weight: bold;
+  background-color: var(--die-color);
+  color: var(--invert-color);
+  text-decoration: none;
+  padding: 16px 48px;
+}
+
+
+
+.page {}
+
+  // .page__body
+
+  .page__body {}
+
+  // .page__content
+
+.page__content {}
+
+
+
+
+.main-header {}
+
+.main-nav {
+
+  // .main-nav__logo
+
+  &__logo {}
+
+  // .main-nav__menu
+
+  &__menu {}
+}
+
+
+
+.logo {
+
+  // .logo__img
+
+  &__img {}
+}
+
+
+
+.menu {
+
+  // .menu__item
+
+  &__item {}
+}
+
+
+
+.about {
+
+  // .about__info
+
+  &__info {}
+
+  // .about__benefits
+
+  &__benefits {}
+
+  // .about__contac-us
+
+  &__contac-us {}
+}
+
+
+
+.visually-hidden {}
+
+
+
+.info {
+
+  // .info__slogan
+
+  &__slogan {}
+
+  // .info__text-content
+
+  &__text-content {}
+}
+
+
+.info-block {
+
+  // .info-block__heading
+
+  &__heading {}
+
+  // .info-block__text
+
+  &__text {}
+}
+
+
+
+
+
+
+.text {}
+
+
+
+.benefits-list {
+
+  // .benefits-list__item
+
+  &__item {}
+
+  // .benefits-list__illustration
+
+  &__illustration {}
+
+  // .benefits-list__illustration--right
+
+  &__illustration--right {}
+
+  // .benefits-list__pic
+
+  &__pic {}
+}
+
+
+
+.dignity {
+
+  // .dignity__heading
+
+  &__heading {}
+
+  // .dignity__number
+
+  &__number {}
+
+  // .dignity__description
+
+  &__description {}
+}
+
+
+
+
+
+
+.availability {
+
+  // .availability__item
+
+  &__item {}
+
+  // .availability__item-heading
+
+  &__item-heading {}
+
+  // .availability__item-desc
+
+  &__item-desc {}
+}
+
+.dignity--slightly {}
+
+.contact-us {
+
+  // .contact-us__choice
+
+  &__choice {}
+
+  // .contact-us__map
+
+  &__map {}
+}
+
+
+.choice {
+
+  // .choice__heading
+
+  &__heading {}
+
+  // .choice__heading-text
+
+  &__heading-text {}
+
+  // .choice__desc
+
+  &__desc {}
+
+  // .choice__btn
+
+  &__btn {}
+}
+
+
+
+
+.main-footer {
+
+  // .main-footer__wrapper
+
+  &__wrapper {}
+
+  // .main-footer__hash
+
+  &__hash {}
+
+  // .main-footer__social
+
+  &__social {}
+
+  // .main-footer__devs
+
+  &__devs {}
+}
+
+.social {
+
+  // .social__item
+
+  &__item {}
+
+  // .social__item-link
+
+  &__item-link {}
+
+  // .social__item-link--tg
+
+  &__item-link--tg {}
+
+  // .social__item-link--yt
+
+  &__item-link--yt {}
+}
