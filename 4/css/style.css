@@ -7,6 +7,7 @@
   --main-bg-color: #ffffff;
   --invert-color: var(--main-bg-color);
   --page-font-color: #000000;
+  --current-link-clr: #766357;
 }
 
 *,
@@ -100,7 +101,55 @@ body {
 }
 
 .menu__item-link--current {
-  color: #766357;
+  color: var(--current-link-clr);
+}
+
+.availability {
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.choice {
+  text-transform: uppercase;
+}
+
+.choice__heading--text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dignity {
+  background-color: var(--die-color);
+  text-transform: uppercase;
+}
+
+.fields__name {
+  font-size: 1.29rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.fields__item-label--accent {
+  font-size: 1.29rem;
+  font-weight: bold;
+}
+
+.info-block {
+  text-transform: uppercase;
+}
+
+.info-block__btn {
+  border: none;
+}
+
+.info-block__btn-wrapper {
+  background-color: var(--neutral-die-color);
 }
 
 .info {
@@ -111,37 +160,8 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.info-block {
-  text-transform: uppercase;
-}
-
-.benefits-list {
-  list-style: none;
-  padding: 0;
-}
-
-.dignity {
-  background-color: var(--die-color);
-  text-transform: uppercase;
-}
-
-.dignity--slightly {
-  background-color: var(--neutral-die-color);
-}
-
-.availability {
-  padding: 0;
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.choice {
-  text-transform: uppercase;
-}
-
-.choice__heading--text {
-  font-size: 1.5rem;
-  font-weight: bold;
+.feedback__submit-btn {
+  border: none;
 }
 
 .main-footer {
@@ -157,28 +177,5 @@ body {
   display: inline-block;
   background-color: var(--die-color);
   padding: 24px;
-}
-
-.fields__name {
-  font-size: 1.29rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.fields__item-label--accent {
-  font-size: 1.29rem;
-  font-weight: bold;
-}
-
-.feedback__submit-btn {
-  border: none;
-}
-
-.info-block__btn {
-  border: none;
-}
-
-.info-block__btn-wrapper {
-  background-color: var(--neutral-die-color);
 }
 /*# sourceMappingURL=style.css.map */
