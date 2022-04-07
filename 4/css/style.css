@@ -1,0 +1,184 @@
+:root {
+  font-size: 0.88em;
+  box-sizing: border-box;
+  --die-color: #81b3d2;
+  --neutral-die-color: #eeeeee;
+  --light-neutral-color: #f2f2f2;
+  --main-bg-color: #ffffff;
+  --invert-color: var(--main-bg-color);
+  --page-font-color: #000000;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "ptsansB";
+  src: local("ptsansB"), url("../fonts/ptsansb.woff") format("woff"), url("../fonts/ptsansb.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "ptsans";
+  src: local("ptsans"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: var(--main-bg-color);
+  color: var(--page-font-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.normal-text {
+  text-transform: initial;
+}
+
+.heading-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.86rem;
+}
+
+.text-color-invert {
+  color: var(--invert-color);
+}
+
+.text-small-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  max-width: max-content;
+  max-height: 58px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--die-color);
+  color: var(--invert-color);
+  text-decoration: none;
+  padding: 16px 48px;
+}
+
+.main-header {
+  background-color: var(--invert-color);
+}
+
+.menu {
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__item-link {
+  color: var(--page-font-color);
+  text-decoration: none;
+}
+
+.menu__item-link--current {
+  color: #766357;
+}
+
+.info {
+  background-image: url("../img/intro_bg.jpg");
+}
+
+.info__text-content {
+  background-color: var(--main-bg-color);
+}
+
+.info-block {
+  text-transform: uppercase;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dignity {
+  background-color: var(--die-color);
+  text-transform: uppercase;
+}
+
+.dignity--slightly {
+  background-color: var(--neutral-die-color);
+}
+
+.availability {
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.choice {
+  text-transform: uppercase;
+}
+
+.choice__heading--text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-footer {
+  text-transform: uppercase;
+}
+
+.social {
+  padding: 0;
+  list-style: none;
+}
+
+.social__item-link {
+  display: inline-block;
+  background-color: var(--die-color);
+  padding: 24px;
+}
+
+.fields__name {
+  font-size: 1.29rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.fields__item-label--accent {
+  font-size: 1.29rem;
+  font-weight: bold;
+}
+
+.feedback__submit-btn {
+  border: none;
+}
+
+.info-block__btn {
+  border: none;
+}
+
+.info-block__btn-wrapper {
+  background-color: var(--neutral-die-color);
+}
+/*# sourceMappingURL=style.css.map */
