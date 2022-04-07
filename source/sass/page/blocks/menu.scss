@@ -1,0 +1,17 @@
+.menu {
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__item-link {
+  color: var(--page-font-color);
+  text-decoration: none;
+}
+
+.menu__item-link--current {
+  color: var(--current-link-clr);
+}

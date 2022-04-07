@@ -1,103 +1,15 @@
 // global styles
-@import "page/global-variables.scss", "page/global.scss", "page/btn/btn.scss";
-
-.main-header {
-  background-color: var(--invert-color);
-}
-
-.menu {
-  text-transform: uppercase;
-  padding: 0;
-}
-
-.menu__item {
-  list-style: none;
-}
-
-.menu__item-link {
-  color: var(--page-font-color);
-  text-decoration: none;
-}
-
-.menu__item-link--current {
-  color: #766357;
-}
-
-.info {
-  background-image: url("../img/intro_bg.jpg");
-}
-
-.info__text-content {
-  background-color: var(--main-bg-color);
-}
-
-.info-block {
-  text-transform: uppercase;
-}
-
-.benefits-list {
-  list-style: none;
-  padding: 0;
-}
-
-.dignity {
-  background-color: var(--die-color);
-  text-transform: uppercase;
-}
-
-.dignity--slightly {
-  background-color: var(--neutral-die-color);
-}
-
-.availability {
-  padding: 0;
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.choice {
-  text-transform: uppercase;
-}
-
-.choice__heading--text {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.main-footer {
-  text-transform: uppercase;
-}
-
-.social {
-  padding: 0;
-  list-style: none;
-}
-
-.social__item-link {
-  display: inline-block;
-  background-color: var(--die-color);
-  padding: 24px;
-}
-
-.fields__name {
-  font-size: 1.29rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.fields__item-label--accent {
-  font-size: 1.29rem;
-  font-weight: bold;
-}
-
-.feedback__submit-btn {
-  border: none;
-}
-
-.info-block__btn {
-  border: none;
-}
-
-.info-block__btn-wrapper {
-  background-color: var(--neutral-die-color);
-}
+@import "page/global-variables.scss", "page/global.scss";
+@import "page/blocks/btn.scss";
+@import "page/blocks/main-header.scss";
+@import "page/blocks/menu.scss";
+@import "page/blocks/availability.scss";
+@import "page/blocks/benefits-list.scss";
+@import "page/blocks/choice.scss";
+@import "page/blocks/dignity.scss";
+@import "page/blocks/fields.scss";
+@import "page/blocks/info-block.scss";
+@import "page/blocks/info.scss";
+@import "page/blocks/feedback.scss";
+@import "page/blocks/main-footer.scss";
+@import "page/blocks/social.scss";
