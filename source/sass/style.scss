@@ -18,12 +18,13 @@
   color: var(--page-font-color);
   text-decoration: none;
 }
+
 .menu__item-link--current {
   color: #766357;
 }
 
 .info {
-  background-image: url(../img/intro_bg.jpg);
+  background-image: url("../img/intro_bg.jpg");
 }
 
 .info__text-content {
