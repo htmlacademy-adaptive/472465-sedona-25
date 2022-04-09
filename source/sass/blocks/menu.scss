@@ -8,10 +8,10 @@
 }
 
 .menu__item-link {
-  color: var(--page-font-color);
+  color: $page-font-color;
   text-decoration: none;
 }
 
 .menu__item-link--current {
-  color: var(--current-link-clr);
+  color: --current-link-clr;
 }

@@ -3,13 +3,6 @@
 :root {
   font-size: 0.88em;
   box-sizing: border-box;
-  --die-color: #81b3d2;
-  --neutral-die-color: #eeeeee;
-  --light-neutral-color: #f2f2f2;
-  --main-bg-color: #ffffff;
-  --invert-color: var(--main-bg-color);
-  --page-font-color: #000000;
-  --current-link-clr: #766357;
 }
 
 *,
@@ -38,8 +31,8 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 
-  background: var(--main-bg-color);
-  color: var(--page-font-color);
+  background: $main-bg-color;
+  color: $page-font-color;
 }
 
 .visually-hidden {
@@ -67,7 +60,7 @@ body {
 }
 
 .text-color-invert {
-  color: var(--invert-color);
+  color: $invert-color;
 }
 
 .text-small-heading {
