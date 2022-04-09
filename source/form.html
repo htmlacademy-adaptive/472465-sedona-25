@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -11,21 +12,21 @@
   <header class="main-header">
 
     <nav class="main-nav">
-      <a class="main-nav__logo logo " href="#">
+      <a class="main-nav__logo logo " href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
       </a>
       <menu class="main-nav__menu menu">
         <li class="menu__item">
-          <a href="#">Главная</a>
+          <a class="menu__item-link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a href="#">Фото и видиео</a>
+          <a class="menu__item-link" href="catalog.html">Фото и видиео</a>
         </li>
         <li class="menu__item">
-          <a href="#">Форма отзыва</a>
+          <a class="menu__item-link menu__item-link--current" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item">
-          <a href="#">Html Academy</a>
+          <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
         </li>
       </menu>
     </nav>
@@ -38,7 +39,7 @@
       <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
       <div class="info__text-content info-block">
         <p class="info-block__heading heading-text">Оставьте свой отзыв</p>
-        <p class="info-block__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <p class="info-block__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -77,15 +78,16 @@
           <legend class="fields__name">Ваше общее впечатление:</legend>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="radio" name="impression" id="positive" value="pos" checked>
-            <label class="fields__item-label" for="positive">Скорее положительное</label>
+            <label class="fields__item-label fields__item-label--accent" for="positive">Скорее положительное</label>
           </div>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="radio" name="impression" id="negative" value="neg">
-            <label class="fields__item-label" for="negative">Скорее отрецательное</label>
+            <label class="fields__item-label fields__item-label--accent" for="negative">Скорее отрецательное</label>
           </div>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="radio" name="impression" id="hard-question" value="hard">
-            <label class="fields__item-label" for="hard-question">Затрудняюсь ответить</label>
+            <label class="fields__item-label fields__item-label--accent" for="hard-question">Затрудняюсь
+              ответить</label>
           </div>
         </fieldset>
 
@@ -93,19 +95,19 @@
           <legend class="fields__name">Посещенные достопримечательности:</legend>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="checkbox" name="attractions" id="devils-bridge" checked>
-            <label class="fields__item-label" for="devils-bridge">Мост дьявола</label>
+            <label class="fields__item-label fields__item-label--accent" for="devils-bridge">Мост дьявола</label>
           </div>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="checkbox" name="attractions" id="mountain" checked>
-            <label class="fields__item-label" for="mountain">Гора-Колокол</label>
+            <label class="fields__item-label fields__item-label--accent" for="mountain">Гора-Колокол</label>
           </div>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="checkbox" name="attractions" id="slayd-park" checked>
-            <label class="fields__item-label" for="slayd-park">Слайд-парк</label>
+            <label class="fields__item-label fields__item-label--accent" for="slayd-park">Слайд-парк</label>
           </div>
           <div class="fields__item-wrapper">
             <input class="fields__item" type="checkbox" name="attractions" id="red-rock">
-            <label class="fields__item-label" for="red-rock">Красные скалы</label>
+            <label class="fields__item-label fields__item-label--accent" for="red-rock">Красные скалы</label>
           </div>
         </fieldset>
         <div class="feedback__submit">
@@ -120,18 +122,18 @@
       </form>
     </section>
 
-    <div class="popup-error close-popup">
+    <div class="popup-error popup-error--close">
       <div class="popup-error__text-content info-block">
         <p class="info-block__heading heading-text">Что-то пошло не так!</p>
-        <p class="info-block__text text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <p class="info-block__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="btn info-block__btn">Ок</button>
       </div>
     </div>
 
-    <div class="popup-complete close-popup">
+    <div class="popup-complete popup-complete--close">
       <div class="popup-complete__text-content info-block">
         <p class="info-block__heading heading-text">Ваш отзыв отправлен!!</p>
-        <p class="info-block__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+        <p class="info-block__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
           опубликуем его на
           сайте.</p>
         <div class="info-block__btn-wrapper">
@@ -164,7 +166,7 @@
           </a>
         </li>
       </ul>
-      <p class="main-footer__devs text">Разработано</p>
+      <p class="main-footer__devs">Разработано</p>
     </div>
   </footer>
 
