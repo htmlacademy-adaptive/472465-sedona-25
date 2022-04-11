@@ -1,8 +1,8 @@
 @import "global-variables";
 
 :root {
-  font-size: 0.88em;
   box-sizing: border-box;
+  font-size: 0.88em;
 }
 
 *,
@@ -26,15 +26,6 @@
   font-style: normal;
 }
 
-body {
-  font-family: "ptsans", "Arial", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-
-  background: $main-bg-color;
-  color: $page-font-color;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,6 +37,11 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 // text apparence
@@ -66,4 +62,10 @@ body {
 .text-small-heading {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+// style for debug
+
+@mixin outline($color: #f00) {
+  outline: 3px solid $color;
 }

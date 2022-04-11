@@ -1,6 +1,9 @@
 .social {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   list-style: none;
+  width: 156px;
 }
 
 .social__item-link {

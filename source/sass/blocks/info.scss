@@ -1,7 +1,27 @@
 .info {
-  background-image: url("../img/intro_bg.jpg");
 }
 
 .info__text-content {
   background-color: $main-bg-color;
+}
+
+.info__slogan {
+  max-width: 461px;
+}
+
+.info__slogan-bg {
+  background-image: url("../img/intro_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+  padding-top: 6.43rem;
+  padding-left: 1.36rem;
+  padding-right: 1.36rem;
+  padding-bottom: 6.43rem;
+  padding: 6.43 1.36;
+  @media (min-width: $tablet-width) {
+    padding-top: 5.5rem;
+  }
 }
