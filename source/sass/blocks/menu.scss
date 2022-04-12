@@ -9,6 +9,7 @@
   font-weight: bold;
   text-transform: uppercase;
   height: 56px;
+
   @media (min-width: $tablet-width) {
     z-index: 0;
     flex-direction: row;
@@ -22,7 +23,8 @@
   width: 100%;
   background-color: $die-color;
   text-align: center;
-  box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px $shadow-color;
+
   @media (min-width: $tablet-width) {
     background: none;
     box-shadow: none;
@@ -31,6 +33,7 @@
 
 .menu__item--chost {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: inline-block;
   }
@@ -44,13 +47,11 @@
   color: $invert-color;
   text-decoration: none;
   font-size: 1.29rem;
+
   @media (min-width: $tablet-width) {
     color: $page-font-color;
     font-size: initial;
   }
-}
-.menu__item-last {
-  box-shadow: inset;
 }
 
 .menu__item-link--current {
