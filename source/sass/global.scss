@@ -42,17 +42,12 @@
 img {
   width: 100%;
   height: auto;
+  line-height: 1;
 }
 
 // text apparence
 .normal-text {
   text-transform: initial;
-}
-
-.heading-text {
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.86rem;
 }
 
 .text-color-invert {

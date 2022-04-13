@@ -59,3 +59,10 @@
     color: $current-link-clr;
   }
 }
+
+.menu--hide {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

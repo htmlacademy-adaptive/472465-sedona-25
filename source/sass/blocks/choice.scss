@@ -1,8 +1,31 @@
 .choice {
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: 287px;
+}
+
+.choice__btn {
+  margin: 0 auto;
+  max-width: 458px;
 }
 
 .choice__heading--text {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
+  @include block-width($mobile-width, 260px);
+  max-width: 435px;
+  padding: 1rem;
+  @media (min-width: $tablet-width) {
+    font-size: 2.14rem;
+  }
+}
+
+.choice__desc {
+  text-align: center;
+  max-width: 435px;
+  padding: 1rem;
 }

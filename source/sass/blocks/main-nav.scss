@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    @include wrapper(1065px);
 }
 
 .main-nav__togle-menu {
@@ -14,5 +15,13 @@
 
     @media (min-width: $tablet-width) {
         display: none;
+    }
+}
+
+.main-nav__logo {
+    z-index: 2;
+    position: absolute;
+    left: auto;
+    @media (min-width: $tablet-width) {
     }
 }
