@@ -1,13 +1,29 @@
 .page {
+  min-width: $mobile-width;
   height: 100%;
   box-sizing: border-box;
 }
 
 .page__body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 1fr 233px;
   min-height: 100%;
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: $common-line-height;
   background: $main-bg-color;
   color: $page-font-color;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 56px 1fr 120px;
+  }
+}
+
+.page__content {
+  grid-area: content;
 }

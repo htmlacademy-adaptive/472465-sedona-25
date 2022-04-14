@@ -1,5 +1,22 @@
 .info-block {
+  background-color: $main-bg-color;
   text-transform: uppercase;
+  padding-top: 1.57rem;
+  padding-bottom: 2.57rem;
+  max-height: 300px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2.57rem;
+    padding-bottom: 3.29rem;
+  }
+}
+
+.info-block__text {
+  @include block-width($mobile-width, 296px);
+  // @include block-height(5);
+  max-width: 520px;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 .info-block__btn {

@@ -1,8 +1,40 @@
 .dignity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: $die-color;
   text-transform: uppercase;
+  padding: 1rem;
+  height: 211px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+    flex-basis: 400px;
+  }
 }
 
 .dignity--slightly {
   background-color: $neutral-die-color;
+}
+
+.dignity__heading {
+  text-align: center;
+
+  @include block-width($mobile-width, 260px);
+
+  padding: 1rem;
+
+  // @include block-height(4);
+}
+
+.dignity__description {
+  text-align: center;
+
+  @include block-width($mobile-width, 260px);
+
+  padding: 1rem;
+
+  // @include block-height(4);
 }

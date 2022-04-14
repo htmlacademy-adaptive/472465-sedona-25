@@ -1,7 +1,7 @@
 // devices
 $mobile-width: 320px;
 $tablet-width: 768px;
-$mobile-width: 1280px;
+$desktop-width: 1280px;
 
 // colors
 $die-color: #81b3d2;
@@ -14,3 +14,8 @@ $current-link-clr: #766357;
 $shadow-color: $page-font-color;
 // blocks measures
 $btn-height: 58px;
+
+// font parametrs
+
+$common-line-height: 1.5;
+$heading-line-height: 1.86;

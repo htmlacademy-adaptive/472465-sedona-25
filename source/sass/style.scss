@@ -1,6 +1,8 @@
 // global styles
 @charset "UTF-8";
 @import "global.scss", "global-variables.scss";
+@import "blocks/global-mixins.scss";
+@import "blocks/heading-text.scss";
 @import "blocks/page.scss";
 @import "blocks/logo.scss";
 @import "blocks/btn.scss";
@@ -17,3 +19,5 @@
 @import "blocks/feedback.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/social.scss";
+@import "blocks/text-number.scss";
+@import "blocks/contact-us.scss";

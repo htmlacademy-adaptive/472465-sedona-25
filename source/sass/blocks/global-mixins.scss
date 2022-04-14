@@ -1,0 +1,19 @@
+@mixin block-width($current-media, $mxWidth, $mnWidth: $mxWidth) {
+  width: calc($mxWidth / $current-media * 100%);
+  min-width: $mnWidth;
+  overflow: hidden;
+}
+
+// @mixin block-height($mxHeight: 2) {
+//   max-height: #{$mxHeight * 2}+em;
+// }
+
+@mixin adapt-width($current-media, $width-in-px) {
+  width: calc($mxWidth / $current-media * 100%);
+}
+
+@mixin wrapper($extrimal-width) {
+  width: 100%;
+  max-width: $extrimal-width;
+  margin: 0 auto;
+}

@@ -1,11 +1,4 @@
 .logo {
-  display: block;
   max-width: 185px;
   height: 96px;
-  position: absolute;
-  left: auto;
-
-  @media (min-width: $tablet-width) {
-    z-index: 2;
-  }
 }
