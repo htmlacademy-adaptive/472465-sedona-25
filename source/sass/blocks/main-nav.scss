@@ -3,9 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 
-  @include wrapper(1065px);
+  @include wrapper($desktop-width);
 }
 
 .main-nav__togle-menu {

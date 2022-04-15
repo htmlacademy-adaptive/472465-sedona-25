@@ -3,8 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  height: 287px;
+  padding: 2.86rem 1rem;
+
+  @include wrapper($desktop-width);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
 }
 
 .choice__btn {

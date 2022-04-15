@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0;
+  padding: 1rem 0;
   list-style: none;
   text-transform: uppercase;
 
@@ -17,10 +17,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 140px;
+  padding: 3rem 0;
 
   @media (min-width: $tablet-width) {
-    height: 330px;
+    padding: 5rem 0;
   }
 }
 

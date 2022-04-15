@@ -4,11 +4,10 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
-  padding: 0;
+
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
-  height: 56px;
 
   @media (min-width: $tablet-width) {
     z-index: 0;
@@ -42,7 +41,7 @@
 .menu__item-link {
   display: inline-block;
   width: 100%;
-  padding: 0.93rem;
+  padding: 0.95rem;
   text-align: center;
   color: $invert-color;
   text-decoration: none;
@@ -52,6 +51,14 @@
     color: $page-font-color;
     font-size: initial;
   }
+}
+
+.menu__item-link:hover {
+  color: $menu-hover;
+}
+
+.menu__item-link:active {
+  color: $btn-dsbled-bg;
 }
 
 .menu__item-link--current {
