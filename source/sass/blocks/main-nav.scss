@@ -1,0 +1,25 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include wrapper($desktop-width);
+}
+
+.main-nav__togle-menu {
+  z-index: 2;
+  position: absolute;
+  right: 1.21rem;
+  top: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo {
+  z-index: 2;
+  position: absolute;
+  left: auto;
+}

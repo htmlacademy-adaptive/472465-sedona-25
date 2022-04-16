@@ -2,3 +2,39 @@
   list-style: none;
   padding: 0;
 }
+
+.benefits-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.benefits-list__illustration {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 1fr;
+  }
+}
+
+.benefits-list__illustration--left {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.benefits-list__item--slightly {
+  background-color: $neutral-die-color;
+}
+
+.benefits-list__pic {
+  display: block;
+  object-fit: cover;
+  max-height: 256px;
+  width: 100%;
+}

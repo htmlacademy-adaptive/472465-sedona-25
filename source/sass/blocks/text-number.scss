@@ -1,0 +1,17 @@
+.text-number {
+  font-weight: bold;
+}
+
+.text-number::after,
+.text-number::before {
+  display: inline;
+  content: "—";
+}
+
+.text-number::before {
+  margin-right: 4px;
+}
+
+.text-number::after {
+  margin-left: 4px;
+}

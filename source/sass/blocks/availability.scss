@@ -1,5 +1,47 @@
 .availability {
-  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0;
   list-style: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.availability__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 5rem 0;
+  }
+}
+
+.availability__item-heading {
+  text-align: left;
+  padding: 1rem 1rem 0;
+
+  @include block-width($mobile-width, 232px);
+
+  @media (min-width: $tablet-width) {
+    max-width: 185px;
+  }
+}
+
+.availability__item-desc {
+  text-align: left;
+  padding: 1rem;
+
+  @include block-width($mobile-width, 232px);
+
+  @media (min-width: $tablet-width) {
+    max-width: 185px;
+  }
 }

@@ -1,3 +1,8 @@
+// devices
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
 // colors
 $die-color: #81b3d2;
 $neutral-die-color: #eeeeee;
@@ -6,5 +11,20 @@ $main-bg-color: #ffffff;
 $invert-color: $main-bg-color;
 $page-font-color: #000000;
 $current-link-clr: #766357;
+$shadow-color: $page-font-color;
+
+// button colors
+$btn-hover-bg: #669ec0;
+$btn-active-bg: #5496bd;
+$btn-dsbled-bg: #e5e5e5;
+
+// menu colors
+$menu-hover: #81b3d2;
+
 // blocks measures
 $btn-height: 58px;
+
+// font parametrs
+
+$common-line-height: 1.5;
+$heading-line-height: 1.86;

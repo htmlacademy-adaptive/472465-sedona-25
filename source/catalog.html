@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,6 +23,9 @@
         <li class="menu__item ">
           <a class="menu__item-link menu__item-link--current" href="catalog.html">Фото и видиео</a>
         </li>
+        <li class="menu__item menu__item--chost">
+          <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
+        </li>
         <li class="menu__item">
           <a class="menu__item-link" href="form.html">Форма отзыва</a>
         </li>
@@ -36,10 +40,13 @@
     <h1 class="visually-hidden">Фотогалерея городка Седона</h1>
     <section class="gallery__info info">
       <h2 class="visually-hidden">Несколько слов о странице</h2>
-      <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
+      <div class="info__slogan-bg">
+        <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
+      </div>
       <div class="info__text-content info-block">
         <p class="info-block__heading heading-text">Фото и видео</p>
-        <p class="info-block__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        <p class="info-block__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+          о
           политике и экономике.</p>
       </div>
     </section>

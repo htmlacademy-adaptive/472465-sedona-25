@@ -1,11 +1,22 @@
 .btn {
   display: block;
-  max-width: max-content;
+
+  @include block-width($mobile-width, 284px);
   max-height: $btn-height;
   font-size: 1.5rem;
   font-weight: bold;
   background-color: $die-color;
   color: $invert-color;
   text-decoration: none;
-  padding: 16px 48px;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn:hover {
+  background-color: $btn-hover-bg;
+}
+
+.btn:active {
+  background-color: $btn-active-bg;
+  color: rgba(255, 255, 255, 0.3);
 }

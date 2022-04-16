@@ -1,7 +1,13 @@
 // global styles
-@import "global.scss","global-variables.scss";
+@charset "UTF-8";
+@import "global.scss", "global-variables.scss";
+@import "global-mixins.scss";
+@import "blocks/heading-text.scss";
+@import "blocks/page.scss";
+@import "blocks/logo.scss";
 @import "blocks/btn.scss";
 @import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/menu.scss";
 @import "blocks/availability.scss";
 @import "blocks/benefits-list.scss";
@@ -13,3 +19,6 @@
 @import "blocks/feedback.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/social.scss";
+@import "blocks/text-number.scss";
+@import "blocks/contact-us.scss";
+@import "blocks/about.scss";
