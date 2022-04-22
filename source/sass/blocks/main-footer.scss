@@ -1,21 +1,19 @@
 .main-footer {
-  grid-area: footer;
   display: flex;
   align-content: center;
   background-color: $main-bg-color;
   text-transform: uppercase;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 2.57rem;
+  padding-bottom: 2.57rem;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-left: 4.29rem;
-    padding-right: 4.29rem;
   }
 }
 
 .main-footer__wrapper {
-  @include wrapper(1065px);
+  @include wrapper;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,5 +21,47 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+
+    @include footer-tab-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include footer-desk-padding;
+  }
+}
+
+.main-footer__hash {
+  text-align: center;
+  line-height: 1em;
+  @include adapt-width($mobile-width, 284px);
+  @media (min-width: $tablet-width) {
+    @include part-of-block(3);
+  }
+}
+
+.main-footer__social {
+  @include adapt-width($mobile-width, 284px);
+
+  @media (min-width: $tablet-width) {
+    @include part-of-block(3);
+  }
+}
+
+.main-footer__devs {
+  text-align: center;
+  line-height: 1em;
+
+  @include adapt-width($mobile-width, 284px);
+
+  @media (min-width: $tablet-width) {
+    @include part-of-block(3);
+  }
+}
+
+.main-footer--spread {
+  margin-bottom: 2.85rem;
+
+  @media (min-width: $tablet-width) {
+    @include margin-resset;
   }
 }

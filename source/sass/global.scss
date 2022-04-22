@@ -54,13 +54,37 @@ img {
   color: $invert-color;
 }
 
-.text-small-heading {
+.heading-small {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-// style for debug
+.heading-medium {
+  font-weight: bold;
+  font-size: 1.29rem;
+  line-height: $heading-line-height;
 
-@mixin outline($color: #f00) {
-  outline: 3px solid $color;
+  @media (min-width: $tablet-width) {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-large {
+  font-weight: bold;
+  font-size: 1.29rem;
+  line-height: $heading-line-height;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.14rem;
+  }
+}
+
+.heading-Xlarge {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: $heading-line-height;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.14rem;
+  }
 }

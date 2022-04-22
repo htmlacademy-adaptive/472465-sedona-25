@@ -1,4 +1,6 @@
 .contact-us__map {
+  @include wrapper;
+  display: block;
   background-image: url("../../img/footer_map.jpg");
   background-position: 50%;
   width: 100%;

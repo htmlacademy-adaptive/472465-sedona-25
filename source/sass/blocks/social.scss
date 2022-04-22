@@ -1,13 +1,21 @@
 .social {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  list-style: none;
-  width: 156px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include reset-list-style;
+}
+
+.social__item {
+  margin: 0 0.22rem 0.44rem;
+}
+
+.social__item:last-child {
+  margin-right: 0.22rem;
+  margin-bottom: 0;
 }
 
 .social__item-link {
-  display: inline-block;
+  display: block;
   background-color: $die-color;
-  padding: 24px;
+  padding: 1.71rem;
 }

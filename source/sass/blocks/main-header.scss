@@ -1,4 +1,16 @@
 .main-header {
-  grid-area: header;
   background-color: $invert-color;
+  padding: 0 0 2.61rem;
+
+  @media (min-width: $tablet-width) {
+    @include padding-resset;
+  }
+}
+
+.main-header__wrapper {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    @include padding-resset;
+  }
 }

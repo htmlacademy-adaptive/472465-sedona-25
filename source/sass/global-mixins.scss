@@ -1,7 +1,6 @@
 @mixin block-width($current-media, $mxWidth, $mnWidth: $mxWidth) {
   width: calc($mxWidth / $current-media * 100%);
   min-width: $mnWidth;
-  overflow: hidden;
 }
 
 // @mixin block-height($mxHeight: 2) {
@@ -9,11 +8,46 @@
 // }
 
 @mixin adapt-width($current-media, $width-in-px) {
-  width: calc($mxWidth / $current-media * 100%);
+  width: calc($width-in-px / $current-media * 100%);
 }
 
-@mixin wrapper($extrimal-width) {
+@mixin part-of-block($part) {
+  max-width: calc(100% / $part);
+}
+
+@mixin wrapper() {
   width: 100%;
-  max-width: $extrimal-width;
+  max-width: $desktop-width;
   margin: 0 auto;
+  @include show-outline(2px, green);
+}
+
+@mixin gl-mob-padding() {
+  padding: 0 1.28rem;
+}
+
+@mixin footer-tab-padding() {
+  padding: 0 4.28rem;
+}
+
+@mixin footer-desk-padding() {
+  padding: 0 8.57rem;
+}
+
+@mixin padding-resset() {
+  padding: 0;
+}
+
+@mixin margin-resset() {
+  margin: 0;
+}
+
+@mixin reset-list-style() {
+  list-style: none;
+  padding: 0;
+}
+
+@mixin show-outline($weight: 2px, $color: red) {
+  outline: $weight dashed $color;
+  outline-offset: -$weight;
 }

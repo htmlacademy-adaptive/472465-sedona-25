@@ -5,13 +5,10 @@
   justify-content: center;
   background-color: $die-color;
   text-transform: uppercase;
-  padding: 3rem 1rem;
-  flex-basis: 100%;
+  padding: 2.85rem 3.14rem;
   min-height: 191px;
 
   @media (min-width: $tablet-width) {
-    flex-basis: calc(100% / 3);
-    flex-shrink: 0;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }

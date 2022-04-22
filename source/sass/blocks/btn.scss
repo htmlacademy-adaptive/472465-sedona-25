@@ -2,14 +2,13 @@
   display: block;
 
   @include block-width($mobile-width, 284px);
-  max-height: $btn-height;
   font-size: 1.5rem;
   font-weight: bold;
   background-color: $die-color;
   color: $invert-color;
   text-decoration: none;
   text-align: center;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .btn:hover {

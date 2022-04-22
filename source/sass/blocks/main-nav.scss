@@ -3,8 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @include wrapper($desktop-width);
 }
 
 .main-nav__togle-menu {
@@ -22,4 +20,5 @@
   z-index: 2;
   position: absolute;
   left: auto;
+  right: auto;
 }

@@ -1,16 +1,25 @@
 .benefits-list {
-  list-style: none;
-  padding: 0;
+  @include reset-list-style;
 }
 
 .benefits-list__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.benefits-list__item-tile {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: calc(100% / 3);
+    flex-shrink: 1;
   }
 }
 
@@ -21,7 +30,7 @@
   }
 }
 
-.benefits-list__illustration--left {
+.benefits-list__pic--left {
   @media (min-width: $tablet-width) {
     order: -1;
   }

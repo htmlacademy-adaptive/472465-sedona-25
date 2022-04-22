@@ -1,0 +1,13 @@
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__pic {
+    min-height: 280px;
+    object-fit: cover;
+
+    @media (min-width: $tablet-width) {
+        min-height: 267px;
+    }
+}
