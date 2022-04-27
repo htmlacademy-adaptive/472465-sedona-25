@@ -55,14 +55,11 @@ img {
 }
 
 .heading-small {
-  text-transform: uppercase;
-  font-weight: bold;
+  @include heading-style;
 }
 
 .heading-medium {
-  font-weight: bold;
-  font-size: 1.29rem;
-  line-height: $heading-line-height;
+  @include heading-style(1.29rem);
 
   @media (min-width: $tablet-width) {
     font-size: 1.5rem;
@@ -70,9 +67,7 @@ img {
 }
 
 .heading-large {
-  font-weight: bold;
-  font-size: 1.29rem;
-  line-height: $heading-line-height;
+  @include heading-style(1.29rem);
 
   @media (min-width: $tablet-width) {
     font-size: 2.14rem;
@@ -80,9 +75,7 @@ img {
 }
 
 .heading-Xlarge {
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: $heading-line-height;
+  @include heading-style(1.5rem);
 
   @media (min-width: $tablet-width) {
     font-size: 2.14rem;

@@ -6,9 +6,14 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     @media (min-width: $tablet-width) {
         flex-direction: row;
+        padding-left: 4.28rem;
+        padding-right: 4.28rem;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0;
     }
 }
 

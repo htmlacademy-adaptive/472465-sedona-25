@@ -1,10 +1,119 @@
-.fields__name {
-  font-size: 1.29rem;
-  text-transform: uppercase;
-  font-weight: bold;
+.fields {
+  @include margin-resset;
+  @include padding-resset;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $btn-dsbled-bg;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 4.28rem;
+    border: none;
+  }
 }
 
-.fields__item-label--accent {
-  font-size: 1.29rem;
-  font-weight: bold;
+.fields__wrapper {
+  padding: 0 1.42rem;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.fields--last {
+  border: none;
+}
+
+.fields--bordered {
+  border-right: 1px solid $fadded-color;
+}
+
+.fields--left {
+  @media (min-width: $tablet-width) {
+    padding-right: 3rem;
+  }
+}
+
+.fields--right {
+  @media (min-width: $tablet-width) {
+    padding-left: 3rem;
+  }
+}
+
+.fields__tile {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: repeat(autofill, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 0 2.57rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 3.14rem;
+  }
+}
+
+.fields__tile--skiny {
+  @media (min-width: $tablet-width) {
+    padding: 0 6rem;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 3.14rem;
+  }
+}
+
+.fields__name {
+  @include heading-style(1.29rem);
+  padding: 1.7rem 1rem 1.42rem;
+
+  @media (min-width: $tablet-width) {
+    padding: 1.7rem 0.5rem 1.42rem;
+  }
+}
+
+.fields__name--dashed {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fields__name--dashed::before,
+.fields__name--dashed::after {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    content: "";
+    flex-basis: 123px;
+    height: 1px;
+    background-color: $fadded-color;
+    vertical-align: middle;
+    flex-grow: 1;
+  }
+}
+
+.fields__name--dashed::before {
+  @media (min-width: $tablet-width) {
+    margin-right: 4.5rem;
+  }
+}
+
+.fields__name--dashed::after {
+  @media (min-width: $tablet-width) {
+    margin-left: 4.5rem;
+  }
+}
+
+.fields__item {
+  margin-bottom: 1.14rem;
+  flex-grow: 1;
 }

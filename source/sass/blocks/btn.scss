@@ -1,7 +1,7 @@
 .btn {
   display: block;
 
-  @include block-width($mobile-width, 284px);
+  @include block-width($mobile-width, 230px);
   font-size: 1.5rem;
   font-weight: bold;
   background-color: $die-color;
@@ -9,6 +9,7 @@
   text-decoration: none;
   text-align: center;
   padding: 1rem;
+  border: none;
 }
 
 .btn:hover {

@@ -12,14 +12,14 @@
 }
 
 @mixin part-of-block($part) {
-  max-width: calc(100% / $part);
+  width: calc(100% / $part);
 }
 
 @mixin wrapper() {
   width: 100%;
   max-width: $desktop-width;
   margin: 0 auto;
-  @include show-outline(2px, green);
+  // @include show-outline(2px, green);
 }
 
 @mixin gl-mob-padding() {
@@ -47,7 +47,15 @@
   padding: 0;
 }
 
-@mixin show-outline($weight: 2px, $color: red) {
+@mixin show-outline($color: red, $weight: 2px) {
   outline: $weight dashed $color;
   outline-offset: -$weight;
+}
+
+@mixin heading-style($f-size: inherit) {
+  text-transform: uppercase;
+  font-size: $f-size;
+  text-align: center;
+  font-weight: bold;
+  line-height: $heading-line-height;
 }

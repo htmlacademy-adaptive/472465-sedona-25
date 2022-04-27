@@ -1,0 +1,40 @@
+.form {
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-areas:
+            "introduce contact"
+            "impressions impressions"
+            "attractions attractions"
+            "emotions emotions";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fill, 1fr);
+    }
+    @include wrapper;
+    border-top: 1px solid $fadded-color;
+
+    @media (min-width: $tablet-width) {
+        border: none;
+    }
+}
+
+.form__introduce {
+    grid-area: introduce;
+}
+
+.form__contact {
+    grid-area: contact;
+}
+
+.form__impressions {
+    grid-area: impressions;
+    margin-top: 3.4rem;
+}
+
+.form__attractions {
+    grid-area: attractions;
+}
+
+.form__emotions {
+    grid-area: emotions;
+    margin-bottom: 4.57rem;
+}

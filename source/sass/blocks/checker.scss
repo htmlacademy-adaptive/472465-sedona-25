@@ -1,0 +1,151 @@
+.checker {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
+.checker--last {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+        @include adapt-width($tablet-width, 648px);
+        align-self: center;
+    }
+}
+
+.checker__label {
+    font-size: inherit;
+    padding-left: 1.14rem;
+}
+
+.checker__label--choose {
+    font-weight: bold;
+    font-size: 1.28rem;
+    padding-left: 0;
+}
+
+.checker__field {
+    padding: 1.14rem;
+    border: none;
+    background-color: $input-color;
+    color: $page-font-color;
+    font-weight: bold;
+    font-size: 1.28rem;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.checker__pic-wraper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.checker__pic {
+    background-color: $field-pic-bg;
+    flex-basis: 58px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.checker__choose {
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+}
+
+.checker__thing {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    background-color: $input-color;
+    margin-right: 1.14rem;
+    border-radius: 4px;
+}
+
+.checker__thing--radio {
+    border-radius: 50%;
+}
+
+.checker__thing::after {
+    display: inline-block;
+    margin: 0 auto;
+    content: "";
+    opacity: 0;
+}
+
+.checker__thing--radio::after {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #000;
+}
+
+.checker__thing--checkbox::after {
+    width: 20px;
+    height: 1rem;
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #000;
+    transform: rotate(315deg);
+}
+
+.checker__choose:checked + .checker__label > .checker__thing::after {
+    opacity: 1;
+}
+
+.checker__msg {
+    @include padding-resset;
+
+    @include margin-resset;
+    background-color: $input-color;
+    border: none;
+    max-height: 150px;
+    margin-bottom: 3.42rem;
+    padding: 1.14rem;
+    font-size: 1.28rem;
+    font-weight: bold;
+    resize: none;
+    box-sizing: border-box;
+    color: $disabled-clr;
+    width: 100%;
+    min-width: min-content;
+
+    @media (min-width: $tablet-width) {
+        max-height: 160px;
+    }
+}
+
+.checker__sumbit-btn {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+        max-width: 324px;
+    }
+}
+
+.checker__submit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.checker__comment {
+    font-size: 0.86rem;
+    line-height: inherit;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    color: $disabled-clr;
+}

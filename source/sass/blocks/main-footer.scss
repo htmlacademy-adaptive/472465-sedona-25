@@ -34,16 +34,23 @@
   text-align: center;
   line-height: 1em;
   @include adapt-width($mobile-width, 284px);
+
+  margin-bottom: 2.85rem;
+
   @media (min-width: $tablet-width) {
     @include part-of-block(3);
+    @include margin-resset;
   }
 }
 
 .main-footer__social {
   @include adapt-width($mobile-width, 284px);
 
+  margin-bottom: 2.85rem;
+
   @media (min-width: $tablet-width) {
     @include part-of-block(3);
+    @include margin-resset;
   }
 }
 
@@ -55,13 +62,5 @@
 
   @media (min-width: $tablet-width) {
     @include part-of-block(3);
-  }
-}
-
-.main-footer--spread {
-  margin-bottom: 2.85rem;
-
-  @media (min-width: $tablet-width) {
-    @include margin-resset;
   }
 }

@@ -1,6 +1,11 @@
 .card {
     display: flex;
     flex-direction: column;
+    padding: 1.7rem 1.42rem;
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+    }
 }
 
 .card__pic {

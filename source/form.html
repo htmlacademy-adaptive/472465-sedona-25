@@ -13,11 +13,11 @@
   <header class="page-body__header main-header">
 
     <nav class="main-nav main-header__wrapper">
-      <a class="main-nav__logo logo " href="#">
+      <a class="main-nav__logo logo " href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
       </a>
       <menu class="main-nav__menu menu menu--hide">
-        <li class="menu__item menu__item--current">
+        <li class="menu__item">
           <a class="menu__item-link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
@@ -26,7 +26,7 @@
         <li class="menu__item menu__item--chost">
           <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item menu__item--current">
           <a class="menu__item-link" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item menu__item-last">
@@ -46,8 +46,9 @@
         <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
       </div>
       <div class="info__text-content info-block">
-        <p class="info-block__heading heading-text">Оставьте свой отзыв</p>
-        <p class="info-block__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <p class="info-block__heading heading-large">Оставьте свой отзыв</p>
+        <p class="info-block__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных
           вами достопримечательностях</p>
       </div>
     </section>
@@ -55,82 +56,119 @@
     <section class="feedback__content">
       <h2 class="visually-hidden">Ваши личные данные</h2>
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fields form__fields--bordered fields">
+
+        <fieldset class="form__introduce fields fields--bordered fields--left">
           <legend class="fields__name">Представьтесь:</legend>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="text" id="name" name="custom-name" placeholder="Пётр" required>
-            <label class="fields__item-label" for="name">Имя*:</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="text" id="surename" name="custom-surname" placeholder="Пустота" required>
-            <label class="fields__item-label" for="surename">Фамилия*:</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
-            <label class="fields__item-label" for="patronymic">Отчество*:</label>
+          <div class="fields__wrapper">
+            <div class="fields__item fields__item--left checker">
+              <input class="checker__field" type="text" id="name" name="custom-name" placeholder="Пётр" required>
+              <label class="checker__label" for="name">Имя*</label>
+            </div>
+            <div class="fields__item fields__item--left checker">
+              <input class="checker__field" type="text" id="surename" name="custom-surname" placeholder="Пустота"
+                required>
+              <label class="checker__label" for="surename">Фамилия*</label>
+            </div>
+            <div class="fields__item fields__item--left checker">
+              <input class="checker__field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+              <label class="checker__label" for="patronymic">Отчество*</label>
+            </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__fields fields">
+        <fieldset class="form__contact fields fields--right">
+
           <legend class="fields__name">Контактная информация:</legend>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="tel" name="phone" id="phone" required>
-            <label class="fields__item-label" for="phone">Контактный телефон*:</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="email" name="mail" id="mail" required>
-            <label class="fields__item-label" for="mail">Электронная почта*:</label>
-          </div>
-        </fieldset>
-        <fieldset class="form__fields fields">
-          <legend class="fields__name">Ваше общее впечатление:</legend>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="radio" name="impression" id="positive" value="pos" checked>
-            <label class="fields__item-label fields__item-label--accent" for="positive">Скорее положительное</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="radio" name="impression" id="negative" value="neg">
-            <label class="fields__item-label fields__item-label--accent" for="negative">Скорее отрецательное</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="radio" name="impression" id="hard-question" value="hard">
-            <label class="fields__item-label fields__item-label--accent" for="hard-question">Затрудняюсь
-              ответить</label>
+          <div class="fields__wrapper">
+            <div class="fields__item fields__item--right checker">
+              <div class="checker__pic-wraper">
+                <input class="checker__field" type="tel" name="phone" id="phone" placeholder="Введите телефон" required
+                  disabled>
+                <span class="checker__pic"></span>
+              </div>
+              <label class="checker__label" for="phone">Контактный телефон*</label>
+            </div>
+            <div class="fields__item fields__item--right checker">
+              <div class="checker__pic-wraper">
+                <input class="checker__field" type="email" name="mail" id="mail" placeholder="Введите e-mail" required
+                  disabled>
+                <span class="checker__pic"></span>
+              </div>
+              <label class="checker__label" for="mail">Электронная почта*</label>
+            </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__fields fields">
-          <legend class="fields__name">Посещенные достопримечательности:</legend>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="checkbox" name="attractions" id="devils-bridge" checked>
-            <label class="fields__item-label fields__item-label--accent" for="devils-bridge">Мост дьявола</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="checkbox" name="attractions" id="mountain" checked>
-            <label class="fields__item-label fields__item-label--accent" for="mountain">Гора-Колокол</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="checkbox" name="attractions" id="slayd-park" checked>
-            <label class="fields__item-label fields__item-label--accent" for="slayd-park">Слайд-парк</label>
-          </div>
-          <div class="fields__item-wrapper">
-            <input class="fields__item" type="checkbox" name="attractions" id="red-rock">
-            <label class="fields__item-label fields__item-label--accent" for="red-rock">Красные скалы</label>
+        <fieldset class="form__impressions fields">
+          <legend class="fields__name fields__name--dashed">Ваше общее впечатление:</legend>
+          <div class="fields__wrapper fields__tile">
+            <div class="fields__item  checker">
+
+              <input class="checker__choose" type="radio" name="impression" id="positive" value="pos" checked>
+              <label class="checker__label checker__label--choose" for="positive"><span
+                  class="checker__thing checker__thing--radio"></span>Скорее
+                положительное</label>
+            </div>
+            <div class="fields__item  checker">
+
+              <input class="checker__choose" type="radio" name="impression" id="negative" value="neg">
+              <label class="checker__label checker__label--choose" for="negative"><span
+                  class="checker__thing checker__thing--radio"></span>Скорее
+                отрицательное</label>
+            </div>
+            <div class="fields__item  checker">
+
+              <input class="checker__choose" type="radio" name="impression" id="hard-question" value="hard">
+              <label class="checker__label checker__label--choose" for="hard-question"><span
+                  class="checker__thing checker__thing--radio"></span>Затрудняюсь
+                ответить</label>
+            </div>
           </div>
         </fieldset>
-        <div class="feedback__submit">
-          <p class="feedback__submit-heading text-heading">Опишите свои эмоции:</p>
-          <textarea class="feedback__submit-msg" name="feedback" id="feedback" cols="30" rows="10"
-            placeholder="Опишите подробно все свои восторги "></textarea>
-          <div class="feedback__submit-wrapper">
-            <button class="feedback__submit-btn btn">Отправить отзыв</button>
-            <span class="feedback__submit-comment">* — обязательные поля</span>
+
+        <fieldset class="form__attractions fields ">
+          <legend class="fields__name fields__name--dashed">Посещенные достопримечательности:</legend>
+          <div class="fields__wrapper fields__tile fields__tile--skiny">
+
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="devils-bridge" checked>
+              <label class="checker__label checker__label--choose" for="devils-bridge"><span
+                  class="checker__thing checker__thing--checkbox"></span>Мост
+                дьявола</label>
+            </div>
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="mountain" checked>
+              <label class="checker__label checker__label--choose" for="mountain"><span
+                  class="checker__thing checker__thing--checkbox"></span>Гора-Колокол</label>
+            </div>
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="slayd-park" checked>
+              <label class="checker__label checker__label--choose" for="slayd-park"><span
+                  class="checker__thing checker__thing--checkbox"></span>Слайд-парк</label>
+            </div>
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="red-rock">
+              <label class="checker__label checker__label--choose" for="red-rock"><span
+                  class="checker__thing checker__thing--checkbox"></span>Красные
+                скалы</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form__emotions fields fields--last">
+          <p class="fields__name fields__name--dashed">Опишите свои эмоции</p>
+          <div class="fields__wrapper checker checker--last">
+            <textarea class="checker__msg" name="feedback" id="feedback" cols="30" rows="10"
+              placeholder="Опишите подробно все свои восторги "></textarea>
+            <div class="checker__submit-wrapper">
+              <button class="checker__sumbit-btn btn">Отправить отзыв</button>
+              <span class="checker__comment">* — обязательные поля</span>
+            </div>
           </div>
         </div>
       </form>
     </section>
 
-    <div class="popup-error popup-error--close">
+    <div class="popup-error popup-error--close visually-hidden">
       <div class="popup-error__text-content info-block">
         <p class="info-block__heading heading-text">Что-то пошло не так!</p>
         <p class="info-block__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -138,7 +176,7 @@
       </div>
     </div>
 
-    <div class="popup-complete popup-complete--close">
+    <div class="popup-complete popup-complete--close visually-hidden">
       <div class="popup-complete__text-content info-block">
         <p class="info-block__heading heading-text">Ваш отзыв отправлен!!</p>
         <p class="info-block__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
@@ -153,11 +191,11 @@
   </main>
   <footer class="page-body__footer main-footer">
     <div class="main-footer__wrapper">
-      <p class="main-footer__hash main-footer--spread heading-text">
+      <p class="main-footer__hash  heading-text">
         #visitsedona
       </p>
 
-      <ul class="main-footer__social main-footer--spread social">
+      <ul class="main-footer__social  social">
         <li class="social__item">
           <a href="#" class="social__item-link">
             <span class="visually-hidden">Вконтакте</span>

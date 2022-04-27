@@ -11,8 +11,7 @@
 }
 
 .info-block__text {
-  @include block-width($mobile-width, 296px);
-
+  @include block-width($mobile-width, 270px);
   text-align: center;
   max-width: 520px;
   padding: 1rem;
