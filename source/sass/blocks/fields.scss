@@ -23,7 +23,6 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 0;
   }
 }
 
@@ -66,6 +65,7 @@
   @media (min-width: $tablet-width) {
     padding: 0 6rem;
   }
+
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 0 3.14rem;

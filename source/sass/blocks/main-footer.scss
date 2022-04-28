@@ -33,9 +33,9 @@
 .main-footer__hash {
   text-align: center;
   line-height: 1em;
-  @include adapt-width($mobile-width, 284px);
-
   margin-bottom: 2.85rem;
+
+  @include adapt-width($mobile-width, 284px);
 
   @media (min-width: $tablet-width) {
     @include part-of-block(3);
@@ -44,9 +44,9 @@
 }
 
 .main-footer__social {
-  @include adapt-width($mobile-width, 284px);
-
   margin-bottom: 2.85rem;
+
+  @include adapt-width($mobile-width, 284px);
 
   @media (min-width: $tablet-width) {
     @include part-of-block(3);
