@@ -20,13 +20,15 @@
   color: $page-font-color;
 
   @include wrapper;
-  @media(min-width: $desktop-width){
-box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
 
 .page-body__header {
   grid-area: header;
+  min-height: 56px;
 }
 
 .page__content {

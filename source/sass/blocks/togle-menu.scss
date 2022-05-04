@@ -1,32 +1,35 @@
-@mixin toggle-parametrs(){
-width: 23px;
-height: 4px;
-background-color: $die-color;
+@mixin toggle-parametrs() {
+  width: 23px;
+  height: 4px;
+  background-color: $die-color;
 }
 
 .togle-menu {
   border: none;
-  @include toggle-parametrs
+
+  @include toggle-parametrs;
 }
 
 .togle-menu:hover {
-opacity: 0.6;
-cursor: pointer;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
-.togle-menu::before, .togle-menu::after {
+.togle-menu::before,
+.togle-menu::after {
   position: absolute;
   display: inline-block;
   content: "";
+
   @include toggle-parametrs;
 }
 
 .togle-menu::before {
   top: -9px;
-  left: 0px;
+  left: 0;
 }
 
 .togle-menu::after {
   top: 9px;
-  left: 0px;
+  left: 0;
 }
