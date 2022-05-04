@@ -1,5 +1,4 @@
 .gallery__list {
-  @include wrapper;
   @include reset-list-style;
 
 
@@ -45,10 +44,3 @@
   }
 }
 
-.gallery__info {
-  @include wrapper;
-}
-
-.gallery__overview-wrapper {
-  @include wrapper;
-}

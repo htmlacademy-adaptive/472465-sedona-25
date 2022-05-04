@@ -2,7 +2,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-areas:
-      "introduce contact"
+      "field-wrapper field-wrapper"
       "impressions impressions"
       "attractions attractions"
       "emotions emotions";
@@ -11,19 +11,20 @@
   }
   border-top: 1px solid $fadded-color;
 
-  @include wrapper;
-
   @media (min-width: $tablet-width) {
     border: none;
   }
 }
+.form__field-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-.form__introduce {
-  grid-area: introduce;
-}
-
-.form__contact {
-  grid-area: contact;
+  @media (min-width: $tablet-width) {
+    padding: 0 4.28rem;
+    grid-area: field-wrapper;
+    flex-direction: row;
+  }
 }
 
 .form__impressions {
