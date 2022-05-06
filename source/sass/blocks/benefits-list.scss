@@ -1,6 +1,6 @@
 .benefits-list {
-  width: 100%;
   @include reset-list-style;
+  width: 100%;
 }
 
 .benefits-list__item {
@@ -32,8 +32,6 @@
 .benefits-list__illustration {
   width: 100%;
 }
-
-
 
 .benefits-list__item--slightly {
   background-color: $neutral-die-color;

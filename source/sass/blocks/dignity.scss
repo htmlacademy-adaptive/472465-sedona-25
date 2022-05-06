@@ -7,12 +7,13 @@
   background-color: $die-color;
   text-transform: uppercase;
   min-height: 191px;
-padding:1rem;
+  padding: 1rem;
 
   @media (min-width: $tablet-width) {
-min-height: 256px;
+    min-height: 256px;
+  }
 }
-}
+
 .dignity--slightly {
   background-color: $neutral-die-color;
 }
@@ -27,22 +28,16 @@ min-height: 256px;
   @media (min-width: $tablet-width) {
     max-width: 150px;
   }
-
 }
 
 .dignity__number {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .dignity__description {
   text-align: center;
 
   @include block-width($mobile-width, 260px);
-
-  @media (min-width: $tablet-width) {
-  //  @include block-width($tablet-width/3, 190px);
-  }
-
 }
 
 .dignity__description--undeline::after {
@@ -55,7 +50,7 @@ margin-bottom: 20px;
   height: 1px;
   background-color: $undelines-clr;
 
-  @media (min-width: $tablet-width){
-display: none;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

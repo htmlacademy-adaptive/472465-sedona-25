@@ -5,13 +5,11 @@
 }
 
 .togle-menu {
-width: 22px;
-height: 23px;
+  width: 22px;
+  height: 23px;
   border: none;
   background-color: transparent;
 }
-
-
 
 .togle-menu:hover {
   opacity: 0.6;
@@ -22,29 +20,30 @@ height: 23px;
 .togle-menu::after {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   display: inline-block;
   content: "";
+
   @include toggle-parametrs;
 }
 
 .togle-menu::before {
-box-shadow: 0 9px 0 $die-color;
+  box-shadow: 0 9px 0 $die-color;
 }
 
 .togle-menu::after {
   top: 18px;
-  @include toggle-parametrs;
 
+  @include toggle-parametrs;
 }
 
 .togle-menu--close::before {
-box-shadow: none;
+  box-shadow: none;
   background-color: $main-bg-color;
-transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 
 .togle-menu--close::after {
   background-color: $main-bg-color;
-transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }

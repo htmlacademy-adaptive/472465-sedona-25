@@ -6,19 +6,16 @@
   background-color: $main-bg-color;
   text-transform: uppercase;
   padding: 1rem;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
-.info-block__heading{
-  word-break:normal;
-margin-top: 47px;
+.info-block__heading {
+  word-break: normal;
+  margin-top: 47px;
   margin-bottom: 37px;
   text-align: center;
   max-width: 440px;
-  @include block-width($mobile-width, 256px)
+
+  @include block-width($mobile-width, 256px);
 }
 
 .info-block__text {
@@ -29,8 +26,9 @@ margin-top: 47px;
 
 .info-block__btn {
   border: none;
-width: 100%;
+  width: 100%;
   margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     max-width: 458px;
   }
@@ -41,6 +39,6 @@ width: 100%;
   min-height: 98px;
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
   background-color: $neutral-die-color;
 }
