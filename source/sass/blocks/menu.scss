@@ -1,24 +1,26 @@
 .menu {
+  @include reset-list-style;
+
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    height: 100%;
     z-index: 0;
     flex-direction: row;
     background-color: $invert-color;
     justify-content: space-between;
+    align-content: stretch;
   }
 }
 
 .menu__item {
-  list-style: none;
   width: 100%;
   background-color: $die-color;
   text-align: center;
@@ -41,8 +43,9 @@
 .menu__item-link {
   display: inline-block;
   width: 100%;
-  padding: 0.95rem;
+  padding: 0.95rem 0.95rem;
   text-align: center;
+  vertical-align: middle;
   color: $invert-color;
   text-decoration: none;
   font-size: 1.29rem;

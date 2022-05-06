@@ -1,17 +1,17 @@
 .page {
-  min-width: $mobile-width;
+  min-width: 100px;
   height: 100%;
-  box-sizing: border-box;
+  background: $page-clr;
 }
 
-.page__body {
+.page-body {
   display: grid;
   grid-template-areas:
     "header"
     "content"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 56px 1fr 233px;
+  grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 1rem;
@@ -19,11 +19,22 @@
   background: $main-bg-color;
   color: $page-font-color;
 
-  @media (min-width: $tablet-width) {
-    grid-template-rows: min-content 1fr 120px;
+  @include wrapper;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
+}
+
+.page-body__header {
+  grid-area: header;
+  min-height: 56px;
 }
 
 .page__content {
   grid-area: content;
+}
+
+.page-body__footer {
+  grid-area: footer;
 }

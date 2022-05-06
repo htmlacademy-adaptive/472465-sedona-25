@@ -11,8 +11,8 @@
 }
 
 .info-block__text {
-  @include block-width($mobile-width, 296px);
-  // @include block-height(5);
+  @include block-width($mobile-width, 240px);
+  text-align: center;
   max-width: 520px;
   padding: 1rem;
   margin: 0 auto;
@@ -20,6 +20,11 @@
 
 .info-block__btn {
   border: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 458px;
+  }
 }
 
 .info-block__btn-wrapper {

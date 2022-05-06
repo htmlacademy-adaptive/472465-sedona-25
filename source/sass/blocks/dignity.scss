@@ -5,19 +5,12 @@
   justify-content: center;
   background-color: $die-color;
   text-transform: uppercase;
-  padding: 3rem 1rem;
-  width: 100%;
+
+  min-height: 191px;
 
   @media (min-width: $tablet-width) {
-    max-height: 256px;
-    flex-basis: 256px;
-    flex-shrink: 0;
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-basis: 400px;
   }
 }
 

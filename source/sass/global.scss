@@ -54,13 +54,30 @@ img {
   color: $invert-color;
 }
 
-.text-small-heading {
-  text-transform: uppercase;
-  font-weight: bold;
+.heading-small {
+  @include heading-style;
 }
 
-// style for debug
+.heading-medium {
+  @include heading-style(1.29rem);
 
-@mixin outline($color: #f00) {
-  outline: 3px solid $color;
+  @media (min-width: $tablet-width) {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-large {
+  @include heading-style(1.29rem);
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.14rem;
+  }
+}
+
+.heading-Xlarge {
+  @include heading-style(1.5rem);
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.14rem;
+  }
 }

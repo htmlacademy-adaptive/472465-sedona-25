@@ -1,0 +1,43 @@
+.form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "field-wrapper field-wrapper"
+      "impressions impressions"
+      "attractions attractions"
+      "emotions emotions";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
+  }
+  border-top: 1px solid $fadded-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.form__field-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 4.28rem;
+    grid-area: field-wrapper;
+    flex-direction: row;
+  }
+}
+
+.form__impressions {
+  grid-area: impressions;
+  margin-top: 3.4rem;
+}
+
+.form__attractions {
+  grid-area: attractions;
+}
+
+.form__emotions {
+  grid-area: emotions;
+  margin-bottom: 4.57rem;
+}

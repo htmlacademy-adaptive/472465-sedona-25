@@ -1,17 +1,22 @@
 // devices
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1280px;
+$desktop-width: 1200px;
 
 // colors
-$die-color: #81b3d2;
-$neutral-die-color: #eeeeee;
-$light-neutral-color: #f2f2f2;
+$page-clr: #f2f2f2;
 $main-bg-color: #ffffff;
+$die-color: #81b3d2; /*$die-color*/
+$neutral-die-color: #eeeeee;  /*$neutral-die-color*/
+$light-neutral-color: #f2f2f2;
 $invert-color: $main-bg-color;
 $page-font-color: #000000;
 $current-link-clr: #766357;
 $shadow-color: $page-font-color;
+$fadded-color: #dbdbdb;
+$input-color: #f2f2f2;
+$field-pic-bg: #e6e6e6;
+$disabled-clr: #333333;
 
 // button colors
 $btn-hover-bg: #669ec0;
