@@ -1,32 +1,37 @@
 .dignity {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $die-color;
   text-transform: uppercase;
-
   min-height: 191px;
+padding:1rem;
 
   @media (min-width: $tablet-width) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
+min-height: 256px;
 }
-
+}
 .dignity--slightly {
   background-color: $neutral-die-color;
 }
 
+
 .dignity__heading {
   text-align: center;
+  margin-bottom: 20px;
 
   @include block-width($mobile-width, 260px);
 
   @media (min-width: $tablet-width) {
-    min-width: 200px;
+    max-width: 150px;
   }
-  padding: 1rem;
+
+}
+
+.dignity__number {
+margin-bottom: 20px;
 }
 
 .dignity__description {
@@ -35,8 +40,22 @@
   @include block-width($mobile-width, 260px);
 
   @media (min-width: $tablet-width) {
-    min-width: 200px;
+  //  @include block-width($tablet-width/3, 190px);
   }
 
-  padding: 1rem;
+}
+
+.dignity__description--undeline::after {
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  background-color: $undelines-clr;
+
+  @media (min-width: $tablet-width){
+display: none;
+  }
 }

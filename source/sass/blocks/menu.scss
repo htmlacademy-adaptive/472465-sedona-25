@@ -1,7 +1,9 @@
 .menu {
   @include reset-list-style;
-
-  z-index: 1;
+position: absolute;
+top: 0;
+left: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +13,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    position: static;
     height: 100%;
     z-index: 0;
     flex-direction: row;

@@ -1,6 +1,5 @@
-@mixin block-width($current-media, $mxWidth, $mnWidth: $mxWidth) {
+@mixin block-width($current-media, $mxWidth) {
   width: calc($mxWidth / $current-media * 100%);
-  min-width: $mnWidth;
 }
 
 // @mixin block-height($mxHeight: 2) {
@@ -55,7 +54,6 @@
 @mixin heading-style($f-size: inherit) {
   text-transform: uppercase;
   font-size: $f-size;
-  text-align: center;
   font-weight: bold;
   line-height: $heading-line-height;
 }

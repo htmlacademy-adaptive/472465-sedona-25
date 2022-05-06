@@ -67,10 +67,10 @@ img {
 }
 
 .heading-large {
-  @include heading-style(1.29rem);
+  @include heading-style(18px);
 
   @media (min-width: $tablet-width) {
-    font-size: 2.14rem;
+    font-size: 30px;
   }
 }
 

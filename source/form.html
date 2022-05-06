@@ -21,20 +21,19 @@
           <a class="menu__item-link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link menu__item-link--current" href="catalog.html">Фото и видиео</a>
+          <a class="menu__item-link" href="catalog.html">Фото и видиео</a>
         </li>
         <li class="menu__item menu__item--chost">
           <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
         </li>
-        <li class="menu__item menu__item--current">
-          <a class="menu__item-link" href="form.html">Форма отзыва</a>
+        <li class="menu__item">
+          <a class="menu__item-link menu__item-link--current" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item menu__item-last">
           <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
         </li>
       </menu>
-      <button class="main-nav__togle-menu togle-menu togle-menu--close "><span
-          class="visually-hidden">Закрыть</span></button>
+      <button class="main-nav__togle-menu togle-menu"><span class="visually-hidden">Закрыть</span></button>
     </nav>
 
   </header>
@@ -168,23 +167,22 @@
       </form>
     </section>
 
-    <div class="popup-error popup-error--close visually-hidden">
-      <div class="popup-error__text-content info-block">
-        <p class="info-block__heading heading-text">Что-то пошло не так!</p>
-        <p class="info-block__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="btn info-block__btn">Ок</button>
+    <div class="popup popup--error popup-error--close">
+      <div class="popup__text-content info-block">
+        <p class="popup__heading info-block__heading heading-large ">Что-то пошло не так!</p>
+        <p class="popup__text info-block__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="popup__btn btn info-block__btn">Ок</button>
       </div>
     </div>
 
-    <div class="popup-complete popup-complete--close visually-hidden">
-      <div class="popup-complete__text-content info-block">
-        <p class="info-block__heading heading-text">Ваш отзыв отправлен!!</p>
-        <p class="info-block__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-          опубликуем его на
-          сайте.</p>
-        <div class="info-block__btn-wrapper">
-          <button class="btn info-block__btn">Закрыть окно</button>
-        </div>
+    <div class="popup  popup--close">
+      <div class="popup__item popup__item--error info-block">
+        <p class="popup__heading popup__heading--error info-block__heading heading-large ">Что-то пошло не так!</p>
+        <p class="popup__text popup__text--error info-block__text">Проверьте поля, выделенные красным, скорее всего вы
+          забыли их заполнить
+        </p>
+        <button class="popup__btn popup__btn--error btn info-block__btn">Закрыть окно</button>
       </div>
     </div>
 
@@ -216,7 +214,7 @@
       <p class="main-footer__devs">Разработано</p>
     </div>
   </footer>
-
+  <script src="js/toggle-menu.js"></script>
 </body>
 
 </html>

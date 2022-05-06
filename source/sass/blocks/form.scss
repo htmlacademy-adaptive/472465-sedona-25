@@ -22,9 +22,12 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 0 4.28rem;
+    padding: 0 60px;
     grid-area: field-wrapper;
     flex-direction: row;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
   }
 }
 

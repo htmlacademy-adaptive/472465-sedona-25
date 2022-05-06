@@ -6,10 +6,10 @@
 }
 
 .main-nav__togle-menu {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   right: 20px;
-  top: calc(9px + 17px);
+  top: 17px;
 
   @media (min-width: $tablet-width) {
     display: none;

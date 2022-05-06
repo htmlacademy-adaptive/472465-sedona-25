@@ -9,7 +9,12 @@
   border-bottom: 1px solid $btn-dsbled-bg;
 
   @media (min-width: $tablet-width) {
-    // padding: 0 4.28rem;
+    padding: 0 60px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
     border: none;
   }
 }
@@ -36,12 +41,14 @@
 
 .fields--left {
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     padding-right: 3rem;
   }
 }
 
 .fields--right {
   @media (min-width: $tablet-width) {
+    padding-right: 0;
     padding-left: 3rem;
   }
 }
@@ -73,8 +80,9 @@
 }
 
 .fields__name {
+  text-align: center;
   @include heading-style(1.29rem);
-  padding: 1.7rem 1rem 1.42rem;
+  padding: 1.7rem 0 1.42rem;
 
   @media (min-width: $tablet-width) {
     padding: 1.7rem 0 1.42rem;
