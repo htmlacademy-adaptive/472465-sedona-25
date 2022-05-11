@@ -66,3 +66,23 @@
     @include part-of-block(3);
   }
 }
+
+.main-footer__devs::after {
+  font-size: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "sedona_icons";
+  content: "\e900";
+  margin-left: 13px;
+}
+
+.main-footer__devs:hover {
+  color: $academy-hover;
+  cursor: pointer;
+}
+
+.main-footer__devs:active {
+  color: $academy-active;
+
+}
+

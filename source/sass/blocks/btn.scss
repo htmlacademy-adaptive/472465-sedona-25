@@ -20,3 +20,8 @@
   background-color: $btn-active-bg;
   color: rgba(255, 255, 255, 0.3);
 }
+
+.btn:disabled {
+  background-color: $btn-dsbled-bg;
+  color: #ffffff;
+}

@@ -65,6 +65,24 @@ border-color: $btn-dsbled-bg;
   flex-basis: 58px;
   flex-grow: 0;
   flex-shrink: 0;
+  font-family: "sedona_icons";
+  color: #000000;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checker__pic::before {
+display: inline-flex;
+}
+
+.checker__pic--phone::before {
+  content: "\e905";
+}
+
+.checker__pic--mail::before {
+  content: "\e906";
 }
 
 .checker__choose {

@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 1.7rem 1.42rem;
 
+  @include show-outline;
   @media (min-width: $tablet-width) {
     padding: 0;
   }
@@ -11,8 +12,50 @@
 .card__pic {
   min-height: 280px;
   object-fit: cover;
-
+@include show-outline(green);
   @media (min-width: $tablet-width) {
     min-height: 267px;
   }
 }
+
+// .card__heading {
+
+//   @media (min-width: $tablet-width) {
+
+//   }
+// }
+
+// .card__info {}
+
+// .card__author {}
+
+// .card__author-name {}
+
+// .card__like-wrapper {}
+
+.card__like-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 21px;
+  color: rgba(#000000, 0.3);
+
+}
+
+.card__like-btn::before {
+  display: inline-flex;
+  font-family: "sedona_icons";
+  content: "\e904";
+}
+
+.card__like-count {}
+
+
+
+
+
+
+
+
+
+
