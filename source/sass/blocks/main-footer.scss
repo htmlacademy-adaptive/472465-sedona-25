@@ -35,6 +35,7 @@
   text-align: center;
   line-height: 1em;
   margin-bottom: 2.85rem;
+  font-weight: bold;
 
   @include adapt-width($mobile-width, 284px);
 

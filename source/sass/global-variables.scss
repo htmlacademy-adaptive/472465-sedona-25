@@ -1,5 +1,6 @@
 // devices
 $mobile-width: 320px;
+$mobile-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
@@ -23,9 +24,14 @@ $btn-hover-bg: #669ec0;
 $btn-active-bg: #5496bd;
 $btn-dsbled-bg: #e5e5e5;
 
+
 // menu colors
 $menu-hover: #81b3d2;
 
+$mob-men-hover: #669ec0;
+$mob-men-active: #5496bd;
+
+$mob-m-font: #ffffff;
 // blocks measures
 $btn-height: 58px;
 
