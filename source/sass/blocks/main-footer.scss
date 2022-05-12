@@ -33,9 +33,11 @@
 
 .main-footer__hash {
   text-align: center;
+  font-size: 21px;
   line-height: 1em;
-  margin-bottom: 2.85rem;
   font-weight: bold;
+  margin-bottom: 2.85rem;
+
 
   @include adapt-width($mobile-width, 284px);
 

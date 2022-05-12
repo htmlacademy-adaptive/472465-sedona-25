@@ -11,6 +11,8 @@
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
+  transition-duration: 0.4s;
+  transition-property: top;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -23,7 +25,13 @@
   }
 }
 
+.menu--hide {
+top: -2000px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
 
 .menu__item {
   width: 100%;
@@ -113,10 +121,3 @@
   }
 }
 
-.menu--hide {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-}
