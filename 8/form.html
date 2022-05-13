@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/472465-sedona-25/8/">
+</head>
+
+<body class="page__body page-body">
+
+  <header class="page-body__header main-header">
+
+    <nav class="main-nav main-header__wrapper">
+      <a class="main-nav__logo logo " href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
+      </a>
+      <menu class="main-nav__menu menu">
+        <li class="menu__item">
+          <a class="menu__item-link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link" href="catalog.html">Фото и видиео</a>
+        </li>
+        <li class="menu__item menu__item--chost">
+          <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link menu__item-link--current" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="menu__item menu__item-last">
+          <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
+        </li>
+      </menu>
+      <button class="main-nav__togle-menu togle-menu"><span class="visually-hidden">Закрыть</span></button>
+    </nav>
+
+  </header>
+  <main class="page__content page-content feedback">
+    <h1 class="visually-hidden">Отзывы</h1>
+    <section class="feedback__info info info--bordered">
+      <h2 class="visually-hidden">Информация о страницу</h2>
+      <div class="info__slogan-bg">
+        <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
+      </div>
+      <div class="info__text-content info-block">
+        <p class="info-block__heading heading-large">Оставьте свой отзыв</p>
+        <p class="info-block__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных
+          вами достопримечательностях</p>
+      </div>
+    </section>
+
+    <section class="feedback__content">
+      <h2 class="visually-hidden">Ваши личные данные</h2>
+      <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__field-wrapper">
+          <fieldset class="form__introduce fields fields--bordered fields--left">
+            <legend class="fields__name">Представьтесь:</legend>
+            <div class="fields__wrapper">
+              <div class="fields__item fields__item--left checker">
+                <input class="checker__field" type="text" id="name" name="custom-name" placeholder="Пётр" required>
+                <label class="checker__label" for="name">Имя*</label>
+              </div>
+              <div class="fields__item fields__item--left checker">
+                <input class="checker__field" type="text" id="surename" name="custom-surname" placeholder="Пустота"
+                  required>
+                <label class="checker__label" for="surename">Фамилия*</label>
+              </div>
+              <div class="fields__item fields__item--left checker">
+                <input class="checker__field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+                <label class="checker__label" for="patronymic">Отчество*</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__contact fields fields--right">
+
+            <legend class="fields__name">Контактная информация:</legend>
+            <div class="fields__wrapper">
+              <div class="fields__item fields__item--right checker">
+                <div class="checker__pic-wraper">
+                  <input class="checker__field" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                    required>
+                  <span class="checker__pic checker__pic--phone"></span>
+                </div>
+                <label class="checker__label" for="phone">Контактный телефон*</label>
+              </div>
+              <div class="fields__item fields__item--right checker">
+                <div class="checker__pic-wraper">
+                  <input class="checker__field" type="email" name="mail" id="mail" placeholder="Введите e-mail"
+                    required>
+                  <span class="checker__pic checker__pic--mail"></span>
+                </div>
+                <label class="checker__label" for="mail">Электронная почта*</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <fieldset class="form__impressions fields">
+          <legend class="fields__name fields__name--dashed">Ваше общее впечатление:</legend>
+          <div class="fields__wrapper fields__tile">
+            <div class="fields__item  checker">
+
+              <input class="checker__choose" type="radio" name="impression" id="positive" value="pos" checked>
+              <label class="checker__label checker__label--choose" for="positive"><span
+                  class="checker__thing checker__thing--radio"></span>Скорее
+                положительное</label>
+            </div>
+            <div class="fields__item  checker">
+
+              <input class="checker__choose" type="radio" name="impression" id="negative" value="neg">
+              <label class="checker__label checker__label--choose" for="negative"><span
+                  class="checker__thing checker__thing--radio"></span>Скорее
+                отрицательное</label>
+            </div>
+            <div class="fields__item  checker">
+
+              <input class="checker__choose" type="radio" name="impression" id="hard-question" value="hard">
+              <label class="checker__label checker__label--choose" for="hard-question"><span
+                  class="checker__thing checker__thing--radio"></span>Затрудняюсь
+                ответить</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__attractions fields ">
+          <legend class="fields__name fields__name--dashed">Посещенные достопримечательности:</legend>
+          <div class="fields__wrapper fields__tile fields__tile--skiny">
+
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="devils-bridge" checked>
+              <label class="checker__label checker__label--choose" for="devils-bridge"><span
+                  class="checker__thing checker__thing--checkbox"></span>Мост
+                дьявола</label>
+            </div>
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="mountain" checked>
+              <label class="checker__label checker__label--choose" for="mountain"><span
+                  class="checker__thing checker__thing--checkbox"></span>Гора-Колокол</label>
+            </div>
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="slayd-park" checked>
+              <label class="checker__label checker__label--choose" for="slayd-park"><span
+                  class="checker__thing checker__thing--checkbox"></span>Слайд-парк</label>
+            </div>
+            <div class="fields__item  checker">
+              <input class="checker__choose" type="checkbox" name="attractions" id="red-rock">
+              <label class="checker__label checker__label--choose" for="red-rock"><span
+                  class="checker__thing checker__thing--checkbox"></span>Красные
+                скалы</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form__emotions fields fields--last">
+          <p class="fields__name fields__name--dashed">Опишите свои эмоции</p>
+          <div class="fields__wrapper checker checker--last">
+            <textarea class="checker__msg" name="feedback" id="feedback" cols="30" rows="10"
+              placeholder="Опишите подробно все свои восторги "></textarea>
+            <div class="checker__submit-wrapper">
+              <button class="checker__sumbit-btn btn">Отправить отзыв</button>
+              <span class="checker__comment">* — обязательные поля</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="popup popup-error popup-error--close">
+      <div class="popup__text-content info-block">
+        <p class="popup__heading info-block__heading heading-large ">Что-то пошло не так!</p>
+        <p class="popup__text info-block__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="popup__btn btn info-block__btn">Ок</button>
+      </div>
+    </div>
+
+    <div class="popup  popup--close">
+      <div class="popup__item popup__item--error info-block">
+        <p class="popup__heading popup__heading--error info-block__heading heading-large ">Что-то пошло не так!</p>
+        <p class="popup__text popup__text--error info-block__text">Проверьте поля, выделенные красным, скорее всего вы
+          забыли их заполнить
+        </p>
+        <button class="popup__btn popup__btn--error btn info-block__btn">Закрыть окно</button>
+      </div>
+    </div>
+
+  </main>
+  <footer class="page-body__footer main-footer">
+    <div class="main-footer__wrapper">
+      <p class="main-footer__hash  heading-text">
+        #visitsedona
+      </p>
+
+      <ul class="main-footer__social  social">
+        <li class="social__item">
+          <a href="#" class="social__item-link social__item-link--vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__item-link social__item-link--tg">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__item-link social__item-link--yt">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="main-footer__devs">Разработано</p>
+    </div>
+  </footer>
+  <script src="js/toggle-menu.js"></script>
+</body>
+
+</html>

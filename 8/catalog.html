@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/472465-sedona-25/8/">
+</head>
+
+<body class="page__body page-body">
+
+  <header class="page-body__header main-header">
+
+    <nav class="main-nav main-header__wrapper">
+      <a class="main-nav__logo logo " href="#">
+        <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
+      </a>
+      <menu class="main-nav__menu menu">
+        <li class="menu__item menu__item--current">
+          <a class="menu__item-link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link menu__item-link--current" href="catalog.html">Фото и видиео</a>
+        </li>
+        <li class="menu__item menu__item--chost">
+          <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="menu__item menu__item-last">
+          <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
+        </li>
+      </menu>
+      <button class="main-nav__togle-menu togle-menu togle-menu--show"><span
+          class="visually-hidden">Закрыть</span></button>
+    </nav>
+
+  </header>
+
+  <main class="page__content content gallery">
+    <h1 class="visually-hidden">Фотогалерея городка Седона</h1>
+    <section class="gallery__info info">
+      <h2 class="visually-hidden">Несколько слов о странице</h2>
+      <div class="info__slogan-bg">
+        <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
+      </div>
+      <div class="info__text-content info-block">
+        <p class="info-block__heading heading-large">Фото и видео</p>
+        <p class="info-block__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+          о
+          политике и экономике.</p>
+      </div>
+    </section>
+
+    <section class="gallery__content">
+      <h2 class="visually-hidden">Галерея лучших мест городка Седона</h2>
+      <ul class="gallery__list">
+        <li class="gallery__list-item gallery__list-item--promo card">
+          <img class="card__pic card__pic--promo" src="img/cat_1.jpg" alt="">
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Неродные просторы</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Борис</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">1350</span>
+            </p>
+          </div>
+        </li>
+        <li class="gallery__list-item  card">
+          <img class="card__pic" src="img/cat_2.jpg" alt="">
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Местная растительность</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Сергей</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">143</span>
+            </p>
+          </div>
+        </li>
+        <li class="gallery__list-item  card">
+          <img class="card__pic" src="img/cat_3.jpg" alt="">
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Дорога на север</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Пётр</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">96</span>
+            </p>
+          </div>
+        </li>
+        <li class="gallery__list-item card ">
+          <img class="card__pic" src="img/cat_4.jpg" alt="">
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Мост дьявола</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Антон</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">254</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery__overview overview">
+      <h2 class="visually-hidden">Видео обзор городка Седона</h2>
+
+
+      <div class="overview__text info-block">
+        <p class="info-block__heading heading-large">Все еще сомневаетесь?</p>
+        <p class="info-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
+
+      <div class="overview__video video">
+        <video class="video__item" poster="img/cat_video.jpg" controls preload="metadata">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/mp4">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/webm">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/ogg">
+
+        </video>
+      </div>
+    </section>
+
+  </main>
+  <footer class="page-body__footer main-footer">
+    <div class="main-footer__wrapper">
+      <p class="main-footer__hash  heading-text">
+        #visitsedona
+      </p>
+
+      <ul class="main-footer__social  social">
+        <li class="social__item">
+          <a href="#" class="social__item-link social__item-link--vk">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__item-link social__item-link--tg">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__item-link social__item-link--yt">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="main-footer__devs">Разработано</p>
+    </div>
+  </footer>
+  <script src="js/toggle-menu.js"></script>
+</body>
+
+</html>
