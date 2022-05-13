@@ -55,115 +55,113 @@
     <section class="feedback__content">
       <h2 class="visually-hidden">Ваши личные данные</h2>
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__field-wrapper">
-          <fieldset class="form__introduce fields fields--bordered fields--left">
-            <legend class="fields__name">Представьтесь:</legend>
-            <div class="fields__wrapper">
-              <div class="fields__item fields__item--left checker">
-                <input class="checker__field" type="text" id="name" name="custom-name" placeholder="Пётр" required>
-                <label class="checker__label" for="name">Имя*</label>
-              </div>
-              <div class="fields__item fields__item--left checker">
-                <input class="checker__field" type="text" id="surename" name="custom-surname" placeholder="Пустота"
-                  required>
-                <label class="checker__label" for="surename">Фамилия*</label>
-              </div>
-              <div class="fields__item fields__item--left checker">
-                <input class="checker__field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
-                <label class="checker__label" for="patronymic">Отчество*</label>
-              </div>
-            </div>
-          </fieldset>
 
-          <fieldset class="form__contact fields fields--right">
+        <fieldset class="form__introduce fields fields--bordered fields--left">
+          <legend class="fields__name fields__name--start">Представьтесь:</legend>
 
-            <legend class="fields__name">Контактная информация:</legend>
-            <div class="fields__wrapper">
-              <div class="fields__item fields__item--right checker">
-                <div class="checker__pic-wraper">
-                  <input class="checker__field" type="tel" name="phone" id="phone" placeholder="Введите телефон"
-                    required>
-                  <span class="checker__pic checker__pic--phone"></span>
-                </div>
-                <label class="checker__label" for="phone">Контактный телефон*</label>
-              </div>
-              <div class="fields__item fields__item--right checker">
-                <div class="checker__pic-wraper">
-                  <input class="checker__field" type="email" name="mail" id="mail" placeholder="Введите e-mail"
-                    required>
-                  <span class="checker__pic checker__pic--mail"></span>
-                </div>
-                <label class="checker__label" for="mail">Электронная почта*</label>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-        <fieldset class="form__impressions fields">
-          <legend class="fields__name fields__name--dashed">Ваше общее впечатление:</legend>
-          <div class="fields__wrapper fields__tile">
-            <div class="fields__item  checker">
-
-              <input class="checker__choose" type="radio" name="impression" id="positive" value="pos" checked>
-              <label class="checker__label checker__label--choose" for="positive"><span
-                  class="checker__thing checker__thing--radio"></span>Скорее
-                положительное</label>
-            </div>
-            <div class="fields__item  checker">
-
-              <input class="checker__choose" type="radio" name="impression" id="negative" value="neg">
-              <label class="checker__label checker__label--choose" for="negative"><span
-                  class="checker__thing checker__thing--radio"></span>Скорее
-                отрицательное</label>
-            </div>
-            <div class="fields__item  checker">
-
-              <input class="checker__choose" type="radio" name="impression" id="hard-question" value="hard">
-              <label class="checker__label checker__label--choose" for="hard-question"><span
-                  class="checker__thing checker__thing--radio"></span>Затрудняюсь
-                ответить</label>
-            </div>
+          <div class="fields__item  fields__item--start checker">
+            <input class="checker__field" type="text" id="name" name="custom-name" placeholder="Пётр" required>
+            <label class="checker__label" for="name">Имя*</label>
           </div>
+          <div class="fields__item fields__item--start checker">
+            <input class="checker__field" type="text" id="surename" name="custom-surname" placeholder="Пустота"
+              required>
+            <label class="checker__label" for="surename">Фамилия*</label>
+          </div>
+          <div class="fields__item fields__item--start checker">
+            <input class="checker__field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+            <label class="checker__label" for="patronymic">Отчество*</label>
+          </div>
+
         </fieldset>
 
-        <fieldset class="form__attractions fields ">
-          <legend class="fields__name fields__name--dashed">Посещенные достопримечательности:</legend>
-          <div class="fields__wrapper fields__tile fields__tile--skiny">
+        <fieldset class="form__contact fields fields--right">
 
-            <div class="fields__item  checker">
-              <input class="checker__choose" type="checkbox" name="attractions" id="devils-bridge" checked>
-              <label class="checker__label checker__label--choose" for="devils-bridge"><span
-                  class="checker__thing checker__thing--checkbox"></span>Мост
-                дьявола</label>
+          <legend class="fields__name fields__name--start">Контактная информация:</legend>
+
+          <div class="fields__item fields__item--start checker">
+            <div class="checker__pic-wraper">
+              <input class="checker__field" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              <span class="checker__pic checker__pic--phone"></span>
             </div>
-            <div class="fields__item  checker">
-              <input class="checker__choose" type="checkbox" name="attractions" id="mountain" checked>
-              <label class="checker__label checker__label--choose" for="mountain"><span
-                  class="checker__thing checker__thing--checkbox"></span>Гора-Колокол</label>
-            </div>
-            <div class="fields__item  checker">
-              <input class="checker__choose" type="checkbox" name="attractions" id="slayd-park" checked>
-              <label class="checker__label checker__label--choose" for="slayd-park"><span
-                  class="checker__thing checker__thing--checkbox"></span>Слайд-парк</label>
-            </div>
-            <div class="fields__item  checker">
-              <input class="checker__choose" type="checkbox" name="attractions" id="red-rock">
-              <label class="checker__label checker__label--choose" for="red-rock"><span
-                  class="checker__thing checker__thing--checkbox"></span>Красные
-                скалы</label>
-            </div>
+            <label class="checker__label" for="phone">Контактный телефон*</label>
           </div>
+          <div class="fields__item fields__item--start checker">
+            <div class="checker__pic-wraper">
+              <input class="checker__field" type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
+              <span class="checker__pic checker__pic--mail"></span>
+            </div>
+            <label class="checker__label" for="mail">Электронная почта*</label>
+          </div>
+
         </fieldset>
-        <div class="form__emotions fields fields--last">
-          <p class="fields__name fields__name--dashed">Опишите свои эмоции</p>
-          <div class="fields__wrapper checker checker--last">
-            <textarea class="checker__msg" name="feedback" id="feedback" cols="30" rows="10"
-              placeholder="Опишите подробно все свои восторги "></textarea>
-            <div class="checker__submit-wrapper">
-              <button class="checker__sumbit-btn btn">Отправить отзыв</button>
-              <span class="checker__comment">* — обязательные поля</span>
-            </div>
+
+        <fieldset class="form__impressions fields fields--tile">
+          <legend class="fields__name">Ваше общее впечатление:</legend>
+
+          <div class="fields__item  checker">
+
+            <input class="checker__choose" type="radio" name="impression" id="positive" value="pos" checked>
+            <label class="checker__label checker__label--choose" for="positive"><span
+                class="checker__thing checker__thing--radio"></span>Скорее
+              положительное</label>
           </div>
-        </div>
+          <div class="fields__item  checker">
+
+            <input class="checker__choose" type="radio" name="impression" id="negative" value="neg">
+            <label class="checker__label checker__label--choose" for="negative"><span
+                class="checker__thing checker__thing--radio"></span>Скорее
+              отрицательное</label>
+          </div>
+          <div class="fields__item  checker">
+
+            <input class="checker__choose" type="radio" name="impression" id="hard-question" value="hard">
+            <label class="checker__label checker__label--choose" for="hard-question"><span
+                class="checker__thing checker__thing--radio"></span>Затрудняюсь
+              ответить</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="form__attractions fields fields--tile fields--tile-skiny">
+          <legend class="fields__name ">Посещенные достопримечательности:</legend>
+
+
+          <div class="fields__item  checker">
+            <input class="checker__choose" type="checkbox" name="attractions" id="devils-bridge" checked>
+            <label class="checker__label checker__label--choose" for="devils-bridge"><span
+                class="checker__thing checker__thing--checkbox"></span>Мост
+              дьявола</label>
+          </div>
+          <div class="fields__item  checker">
+            <input class="checker__choose" type="checkbox" name="attractions" id="mountain" checked>
+            <label class="checker__label checker__label--choose" for="mountain"><span
+                class="checker__thing checker__thing--checkbox"></span>Гора-Колокол</label>
+          </div>
+          <div class="fields__item  checker">
+            <input class="checker__choose" type="checkbox" name="attractions" id="slayd-park" checked>
+            <label class="checker__label checker__label--choose" for="slayd-park"><span
+                class="checker__thing checker__thing--checkbox"></span>Слайд-парк</label>
+          </div>
+          <div class="fields__item  checker">
+            <input class="checker__choose" type="checkbox" name="attractions" id="red-rock">
+            <label class="checker__label checker__label--choose" for="red-rock"><span
+                class="checker__thing checker__thing--checkbox"></span>Красные
+              скалы</label>
+          </div>
+
+        </fieldset>
+        <fieldset class="form__emotions fields fields--last">
+          <legend class="fields__name">Опишите свои эмоции</legend>
+          <!-- <div class="fields__wrapper checker checker--last"> -->
+          <textarea class="checker__msg" name="feedback" id="feedback" cols="30" rows="10"
+            placeholder="Опишите подробно все свои восторги "></textarea>
+          <div class="checker__submit-wrapper">
+            <button class="checker__sumbit-btn btn">Отправить отзыв</button>
+            <span class="checker__comment">* — обязательные поля</span>
+          </div>
+          <!-- </div> -->
+        </fieldset>
       </form>
     </section>
 
