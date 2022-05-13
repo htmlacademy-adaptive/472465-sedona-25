@@ -26,27 +26,28 @@
   color: #ffffff;
 }
 
-.social__item-link:hover{
+.social__item-link:hover {
   background-color: $btn-hover-bg;
 }
 
-.social__item-link:active{
-color: rgba(#ffffff, 0.4);
+.social__item-link:active {
+  color: rgba(#ffffff, 0.4);
 }
 
-.social__item-link::before{
+.social__item-link::before {
   display: inline-flex;
-  font-family: "sedona_icons";
+  font-family: "sedona_icons", "Arial", sans-serif;
   font-size: 15px;
 }
 
 .social__item-link--vk::before {
   content: "\e903";
 }
+
 .social__item-link--tg::before {
   content: "\e902";
 }
+
 .social__item-link--yt::before {
   content: "\e901";
 }
-

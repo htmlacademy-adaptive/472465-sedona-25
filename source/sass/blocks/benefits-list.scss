@@ -13,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    overflow: hidden;
   }
 }
 
@@ -40,9 +39,14 @@
 .benefits-list__pic {
   display: block;
   object-fit: cover;
-  width: 100%;
-  min-height: 260px;
+  height: 260px;
 
+  @media (min-width: $tablet-width) {
+    max-height: 256px;
+  }
+}
+
+.benefits-list__pic-wrapper {
   @media (min-width: $tablet-width) {
     max-height: 256px;
     flex-basis: 500px;

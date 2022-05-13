@@ -83,7 +83,7 @@
   text-align: center;
 
   @include heading-style(1.29rem);
-  padding: 1.7rem 0 1.42rem;
+  padding: 1.7rem 0.5rem 1.42rem;
 
   @media (min-width: $tablet-width) {
     padding: 1.7rem 0 1.42rem;

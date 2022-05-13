@@ -1,9 +1,5 @@
-.overview__wrapper {
-  // @include wrapper;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.overview {
+  width: 100%;
   padding: 0 1.43rem;
 
   @media (min-width: $tablet-width) {
@@ -13,4 +9,14 @@
   @media (min-width: $desktop-width) {
     padding: 0 14.3rem 6.15rem;
   }
+}
+
+.overview__text {
+  margin: 0 auto;
+  max-width: 475px;
+}
+
+.overview__video {
+  margin: 0 auto;
+  max-width: 800px;
 }

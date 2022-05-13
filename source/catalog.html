@@ -16,7 +16,7 @@
       <a class="main-nav__logo logo " href="#">
         <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
       </a>
-      <menu class="main-nav__menu menu menu--hide">
+      <menu class="main-nav__menu menu">
         <li class="menu__item menu__item--current">
           <a class="menu__item-link" href="index.html">Главная</a>
         </li>
@@ -33,10 +33,12 @@
           <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
         </li>
       </menu>
-      <button class="main-nav__togle-menu togle-menu"><span class="visually-hidden">Закрыть</span></button>
+      <button class="main-nav__togle-menu togle-menu togle-menu--show"><span
+          class="visually-hidden">Закрыть</span></button>
     </nav>
 
   </header>
+
   <main class="page__content content gallery">
     <h1 class="visually-hidden">Фотогалерея городка Седона</h1>
     <section class="gallery__info info">
@@ -103,7 +105,7 @@
             </p>
           </div>
         </li>
-        <li class="gallery__list-item gallery__list-item--last card ">
+        <li class="gallery__list-item card ">
           <img class="card__pic" src="img/cat_4.jpg" alt="">
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
@@ -123,22 +125,21 @@
     </section>
     <section class="gallery__overview overview">
       <h2 class="visually-hidden">Видео обзор городка Седона</h2>
-      <div class="overview__wrapper">
 
-        <div class="overview-text info-block">
-          <p class="info-block__heading heading-large">Все еще сомневаетесь?</p>
-          <p class="info-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-            очередной раз!</p>
-        </div>
 
-        <div class="overview-video video">
-          <video class="video__item" poster="img/cat_video.jpg" controls preload="metadata">
-            <source src="https://youtu.be/-pjw1_GucsA" type="video/mp4">
-            <source src="https://youtu.be/-pjw1_GucsA" type="video/webm">
-            <source src="https://youtu.be/-pjw1_GucsA" type="video/ogg">
+      <div class="overview__text info-block">
+        <p class="info-block__heading heading-large">Все еще сомневаетесь?</p>
+        <p class="info-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
 
-          </video>
-        </div>
+      <div class="overview__video video">
+        <video class="video__item" poster="img/cat_video.jpg" controls preload="metadata">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/mp4">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/webm">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/ogg">
+
+        </video>
       </div>
     </section>
 
