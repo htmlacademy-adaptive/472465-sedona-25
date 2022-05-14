@@ -1,6 +1,5 @@
 .checker {
   display: flex;
-  // flex-direction: column;
   flex-direction: column-reverse;
 }
 
@@ -18,7 +17,6 @@
 }
 
 .checker__label {
-  font-size: inherit;
   padding-left: 1.14rem;
 }
 
@@ -30,7 +28,7 @@
 
 .checker__field {
   padding: 1.14rem;
-  border: none;
+  border: 4px solid transparent;
   background-color: $input-color;
   color: $page-font-color;
   font-weight: bold;
@@ -38,6 +36,19 @@
   width: 100%;
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+.checker__field::placeholder {
+  color: rgba($page-font-color, 0.3);
+}
+
+.checker__field:hover {
+  background-color: $btn-dsbled-bg;
+}
+
+.checker__field:active {
+  background-color: $main-bg-color;
+  border-color: $btn-dsbled-bg;
 }
 
 .checker__pic-wraper {
@@ -52,6 +63,24 @@
   flex-basis: 58px;
   flex-grow: 0;
   flex-shrink: 0;
+  font-family: "sedona_icons", "Arial", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checker__pic::before {
+  display: inline-flex;
+}
+
+.checker__pic--phone::before {
+  content: "\e905";
+}
+
+.checker__pic--mail::before {
+  content: "\e906";
 }
 
 .checker__choose {
@@ -102,6 +131,18 @@
   opacity: 1;
 }
 
+.checker__label:hover .checker__thing {
+  background-color: $btn-dsbled-bg;
+}
+
+.checker__label:active .checker__thing--radio::after {
+  background-color: rgba($page-font-color, 0.3);
+}
+
+.checker__label:active .checker__thing--checkbox::after {
+  border-color: rgba(#000000, 0.3);
+}
+
 .checker__msg {
   @include padding-resset;
   @include margin-resset;
@@ -117,7 +158,7 @@
   box-sizing: border-box;
   color: $disabled-clr;
   width: 100%;
-  min-width: min-content;
+
 
   @media (min-width: $tablet-width) {
     max-height: 160px;

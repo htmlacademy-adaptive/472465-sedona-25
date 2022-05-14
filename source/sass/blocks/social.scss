@@ -16,7 +16,38 @@
 }
 
 .social__item-link {
-  display: block;
+  display: flex;
   background-color: $die-color;
-  padding: 1.71rem;
+  min-width: 48px;
+  min-height: 48px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social__item-link:hover {
+  background-color: $btn-hover-bg;
+}
+
+.social__item-link:active {
+  color: rgba(#ffffff, 0.4);
+}
+
+.social__item-link::before {
+  display: inline-flex;
+  font-family: "sedona_icons", "Arial", sans-serif;
+  font-size: 15px;
+}
+
+.social__item-link--vk::before {
+  content: "\e903";
+}
+
+.social__item-link--tg::before {
+  content: "\e902";
+}
+
+.social__item-link--yt::before {
+  content: "\e901";
 }

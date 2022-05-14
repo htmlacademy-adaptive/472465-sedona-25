@@ -1,6 +1,8 @@
 // devices
 $mobile-width: 320px;
+$mobile-only: 767px;
 $tablet-width: 768px;
+$not-bigger-of-tablet: 1199px;
 $desktop-width: 1200px;
 
 // colors
@@ -17,15 +19,24 @@ $fadded-color: #dbdbdb;
 $input-color: #f2f2f2;
 $field-pic-bg: #e6e6e6;
 $disabled-clr: #333333;
-
+$undelines-clr: #d6d6d6;
 // button colors
 $btn-hover-bg: #669ec0;
 $btn-active-bg: #5496bd;
 $btn-dsbled-bg: #e5e5e5;
+$middle-grey: #eaeaea;
+
 
 // menu colors
 $menu-hover: #81b3d2;
 
+$mob-men-hover: #669ec0;
+$mob-men-active: #5496bd;
+
+$academy-hover: #b1d3d2;
+$academy-active: #b3b3b3;
+
+$mob-m-font: #ffffff;
 // blocks measures
 $btn-height: 58px;
 

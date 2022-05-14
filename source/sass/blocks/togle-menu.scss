@@ -5,9 +5,14 @@
 }
 
 .togle-menu {
+  width: 22px;
+  height: 23px;
   border: none;
+  background-color: transparent;
+}
 
-  @include toggle-parametrs;
+.togle-menu--hide {
+  display: none;
 }
 
 .togle-menu:hover {
@@ -15,21 +20,40 @@
   cursor: pointer;
 }
 
+.togle-menu:active {
+  opacity: 0.3;
+}
+
 .togle-menu::before,
 .togle-menu::after {
   position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
   content: "";
+  transition: transform 0.2s linear 0s;
 
   @include toggle-parametrs;
 }
 
 .togle-menu::before {
-  top: -9px;
-  left: 0;
+  box-shadow: 0 9px 0 $die-color;
+  transition: box-shadow 0.2s linear 50ms;
 }
 
 .togle-menu::after {
-  top: 9px;
-  left: 0;
+  top: 18px;
+
+  @include toggle-parametrs;
+}
+
+.togle-menu--close::before {
+  box-shadow: 0 0 0 rgba($die-color, 0);
+  background-color: $main-bg-color;
+  transform: translateY(9px) rotate(45deg);
+}
+
+.togle-menu--close::after {
+  background-color: $main-bg-color;
+  transform: translateY(-9px) rotate(-45deg);
 }

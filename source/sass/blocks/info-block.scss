@@ -1,26 +1,33 @@
 .info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: $main-bg-color;
   text-transform: uppercase;
-  padding-top: 1.57rem;
-  padding-bottom: 2.57rem;
+  padding: 1rem;
+}
 
-  @media (min-width: $tablet-width) {
-    padding-top: 2.57rem;
-    padding-bottom: 3.29rem;
-  }
+.info-block__heading {
+  word-break: normal;
+  margin-top: 47px;
+  margin-bottom: 37px;
+  text-align: center;
+  max-width: 440px;
+
+  @include block-width($mobile-width, 256px);
 }
 
 .info-block__text {
-  @include block-width($mobile-width, 240px);
   text-align: center;
   max-width: 520px;
-  padding: 1rem;
-  margin: 0 auto;
+  margin-bottom: 44px;
 }
 
 .info-block__btn {
   border: none;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     max-width: 458px;
@@ -28,5 +35,10 @@
 }
 
 .info-block__btn-wrapper {
+  width: 100%;
+  min-height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $neutral-die-color;
 }

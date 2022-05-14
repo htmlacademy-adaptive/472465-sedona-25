@@ -5,14 +5,44 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 1rem;
+  padding: 0 20px 1rem;
+
   border-bottom: 1px solid $btn-dsbled-bg;
 
   @media (min-width: $tablet-width) {
-    // padding: 0 4.28rem;
-    border: none;
+
+    border-bottom: none;
+    border-top: 1px solid $btn-dsbled-bg;
   }
 }
+
+.fields--tile {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: repeat(autofill, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 0 2.57rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3.14rem;
+  }
+}
+
+.fields--tile-skiny {
+  @media (min-width: $tablet-width) {
+    padding: 0 6rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0 3.14rem;
+  }
+}
+
 
 .fields__wrapper {
   padding: 0 1.42rem;
@@ -27,58 +57,54 @@
 }
 
 .fields--last {
+  border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 96px;
+  }
+}
+
+.fields--left {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 3rem;
+  }
+}
+
+.fields--right {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 3rem;
+  }
 }
 
 .fields--bordered {
   border-right: 1px solid $fadded-color;
 }
 
-.fields--left {
-  @media (min-width: $tablet-width) {
-    padding-right: 3rem;
-  }
-}
-
-.fields--right {
-  @media (min-width: $tablet-width) {
-    padding-left: 3rem;
-  }
-}
-
-.fields__tile {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-rows: repeat(autofill, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    padding: 0 2.57rem;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    padding: 0 3.14rem;
-  }
-}
-
-.fields__tile--skiny {
-  @media (min-width: $tablet-width) {
-    padding: 0 6rem;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    padding: 0 3.14rem;
-  }
-}
-
 .fields__name {
+  text-align: center;
+  max-width: 340px;
+
   @include heading-style(1.29rem);
-  padding: 1.7rem 1rem 1.42rem;
+  padding: 1.7rem 0.5rem 1.42rem;
 
   @media (min-width: $tablet-width) {
-    padding: 1.7rem 0 1.42rem;
+    padding: 1.7rem 40px 1.42rem;
   }
+}
+
+.fields__name--start {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .fields__name--dashed {
@@ -116,4 +142,8 @@
 .fields__item {
   margin-bottom: 1.14rem;
   flex-grow: 1;
+}
+
+.fields__item--start {
+  flex-grow: 0;
 }
