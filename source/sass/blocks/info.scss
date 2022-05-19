@@ -18,12 +18,29 @@
   position: relative;
   text-align: center;
   padding: 6.43rem 1.36rem;
-  background-image: url("../../img/info-bg-decor.png"), url("../img/intro_bg.jpg");
+  background-image: url("../img/info-bg-decor.png"), url("../img/background/mobile/bg.jpg");
   background-size: $desktop-width, cover;
   background-position: center bottom, center bottom;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/info-bg-decor.png"), url("../img/background/mobile/bg@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 5.5rem;
+    background-image: url("../img/info-bg-decor.png"), url("../img/background/tablet/bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/info-bg-decor.png"), url("../img/background/tablet/bg@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/info-bg-decor.png"), url("../img/background/desktop/bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/info-bg-decor.png"), url("../img/background/desktop/bg@2x.jpg");
+    }
   }
 }

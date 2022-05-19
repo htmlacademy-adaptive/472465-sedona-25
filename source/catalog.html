@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link type="image/png" sizes="32x32" rel="icon" href="favicon-32x32.png">
 </head>
 
 <body class="page__body page-body">
@@ -13,7 +14,7 @@
   <header class="page-body__header main-header">
 
     <nav class="main-nav main-header__wrapper">
-      <a class="main-nav__logo logo " href="#">
+      <a class="main-nav__logo logo " href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
       </a>
       <menu class="main-nav__menu menu">
@@ -44,7 +45,8 @@
     <section class="gallery__info info">
       <h2 class="visually-hidden">Несколько слов о странице</h2>
       <div class="info__slogan-bg">
-        <img class="info__slogan" src="img/intro_slogan_light.svg" alt="Слоган города Седона" width="460" height="350">
+        <img class="info__slogan" src="img/background/intro_slogan_light.svg" alt="Слоган города Седона" width="460"
+          height="350">
       </div>
       <div class="info__text-content info-block">
         <p class="info-block__heading heading-large">Фото и видео</p>
@@ -58,7 +60,14 @@
       <h2 class="visually-hidden">Галерея лучших мест городка Седона</h2>
       <ul class="gallery__list">
         <li class="gallery__list-item gallery__list-item--promo card">
-          <img class="card__pic card__pic--promo" src="img/cat_1.jpg" alt="">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/desktop/cat_1.jpg 1x, img/catalog/desktop/cat_1@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/tablet/cat_1.jpg 1x, img/catalog/tablet/cat_1@2x.jpg 2x">
+            <img class="card__pic card__pic--promo" src="img/catalog/mobile/cat_1.jpg"
+              srcset="img/catalog/mobile/cat_1@2x.jpg 2x" alt="дорога в закат" width="280" height="280">
+          </picture>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Неродные просторы</p>
@@ -73,8 +82,19 @@
             </p>
           </div>
         </li>
+
+
+
         <li class="gallery__list-item  card">
-          <img class="card__pic" src="img/cat_2.jpg" alt="">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/desktop/cat_2.jpg 1x, img/catalog/desktop/cat_2@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/tablet/cat_2.jpg 1x, img/catalog/tablet/cat_2@2x.jpg 2x">
+            <img class="card__pic" src="img/catalog/mobile/cat_2.jpg" srcset="img/catalog/mobile/cat_2@2x.jpg 2x"
+              alt="растительность седоны" width="280" height="280">
+          </picture>
+
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Местная растительность</p>
@@ -90,7 +110,14 @@
           </div>
         </li>
         <li class="gallery__list-item  card">
-          <img class="card__pic" src="img/cat_3.jpg" alt="">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_3@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/tablet/cat_3.jpg 1x, img/catalog/tablet/cat_3@2x.jpg 2x">
+            <img class="card__pic" src="img/catalog/mobile/cat_3.jpg" srcset="img/catalog/mobile/cat_3@2x.jpg 2x"
+              alt="растительность седоны" width="280" height="280">
+          </picture>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Дорога на север</p>
@@ -106,7 +133,14 @@
           </div>
         </li>
         <li class="gallery__list-item card ">
-          <img class="card__pic" src="img/cat_4.jpg" alt="">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_4@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/tablet/cat_4.jpg 1x, img/catalog/tablet/cat_4@2x.jpg 2x">
+            <img class="card__pic" src="img/catalog/mobile/cat_4.jpg" srcset="img/catalog/mobile/cat_4@2x.jpg 2x"
+              alt="растительность седоны" width="280" height="280">
+          </picture>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Мост дьявола</p>
@@ -121,6 +155,8 @@
             </p>
           </div>
         </li>
+
+
       </ul>
     </section>
     <section class="gallery__overview overview">
@@ -172,6 +208,7 @@
     </div>
   </footer>
   <script src="js/toggle-menu.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

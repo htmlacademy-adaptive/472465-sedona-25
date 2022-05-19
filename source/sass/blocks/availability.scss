@@ -36,7 +36,7 @@
   content: "";
   display: block;
   padding: 20px;
-  background-image: url("../img/house.svg");
+  background-image: url("../img/icons/house.svg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -50,11 +50,11 @@
 }
 
 .availability__heading--burger::before {
-  background-image: url("../img/burger.svg");
+  background-image: url("../img/icons/burger.svg");
 }
 
 .availability__heading--present::before {
-  background-image: url("../img/present.svg");
+  background-image: url("../img/icons/present.svg");
 }
 
 .availability__desc {

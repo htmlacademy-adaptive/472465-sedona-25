@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link type="image/png" sizes="32x32" rel="icon" href="favicon-32x32.png">
 </head>
 
 <body class="page__body page-body">
@@ -29,7 +30,6 @@
         <li class="menu__item">
           <a class="menu__item-link" href="form.html">Форма отзыва</a>
         </li>
-
         <li class="menu__item menu__item-last">
           <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
         </li>
@@ -45,7 +45,8 @@
     <section class="content__info info">
       <h2 class="visually-hidden">Вступительная речь</h2>
       <div class="info__slogan-bg">
-        <img class="info__slogan" src="img/intro_slogan.svg" alt="Слоган города Седона" width="460" height="350">
+        <img class="info__slogan" src="img/background/intro_slogan.svg" alt="Слоган города Седона" width="460"
+          height="350">
       </div>
       <div class="info__text-content info__text-content--main info-block">
         <p class="info-block__heading heading-medium"> СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий
@@ -66,7 +67,12 @@
               жизнь</p>
           </div>
           <div class="benefits-list__pic-wrapper">
-            <img class="benefits-list__pic" src="img/to_dignity_1.jpg" alt="фото районной управы городка Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/desktop/city.jpg, img/index/desktop/city@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/tablet/city.jpg, img/index/tablet/city@2x.jpg 2x">
+              <img class="benefits-list__pic" src="img/index/mobile/city.jpg" srcset="img/index/mobile/city@2x.jpg 2x"
+                alt="фото районной управы городка Седона" width="520" height="260">
+            </picture>
           </div>
         </li>
 
@@ -104,8 +110,14 @@
               конечно</p>
           </div>
           <div class="benefits-list__pic-wrapper">
-            <img class="benefits-list__pic benefits-list__pic--left" src="img/to_dignity_2.jpg"
-              alt="тот самый мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/index/desktop/mountains.jpg 1x, img/index/desktop/mountains@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/index/tablet/mountains.jpg 1x, img/index/tablet/mountains@2x.jpg 2x">
+              <img class="benefits-list__pic" src="img/index/mobile/mountains.jpg"
+                srcset="img/index/mobile/mountains@2x.jpg 2x" width="520" height="260" alt="тот самый мост дьявола">
+            </picture>
           </div>
         </li>
         <li class="benefits-list__item benefits-list__item--slightly">
@@ -175,6 +187,7 @@
     </div>
   </footer>
   <script src="js/toggle-menu.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

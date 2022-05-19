@@ -40,16 +40,14 @@
 
 
 .card__pic {
-  height: 280px;
-  object-fit: cover;
+  display: block;
+  min-width: 200px;
+  object-fit: contain;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    height: 267px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 400px;
+    object-fit: cover;
+    max-height: 400px;
   }
 }
 
