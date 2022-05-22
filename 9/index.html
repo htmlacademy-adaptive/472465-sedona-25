@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link type="image/png" sizes="32x32" rel="icon" href="favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/472465-sedona-25/9/">
 </head>
 
@@ -20,7 +23,7 @@
       </a>
       <menu class="main-nav__menu menu">
         <li class="menu__item menu__item--current menu__first">
-          <a class="menu__item-link menu__item-link--current" href="index.html">Главная</a>
+          <a class="menu__item-link menu__item-link--current" href="#">Главная</a>
         </li>
         <li class="menu__item">
           <a class="menu__item-link" href="catalog.html">Фото и видиео</a>
@@ -32,7 +35,7 @@
           <a class="menu__item-link" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item menu__item-last">
-          <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
+          <a class="menu__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
         </li>
       </menu>
       <button class="main-nav__togle-menu togle-menu"><span class=" visually-hidden">Закрыть</span></button>
@@ -63,9 +66,7 @@
           <div class="benefits-list__item-tile dignity">
             <p class="dignity__heading heading-medium text-color-invert">Настоящий городок</p>
             <p class="dignity__number text-number text-color-invert">№1</p>
-            <p class="dignity__description text-color-invert">Седона не аттракцион для туристов,
-              там течёт своя
-              жизнь</p>
+            <p class="dignity__description text-color-invert">Седона не аттракцион для туристов,там течёт своя жизнь</p>
           </div>
           <div class="benefits-list__pic-wrapper">
             <picture>
@@ -106,11 +107,9 @@
           <div class="benefits-list__item-tile dignity">
             <p class="dignity__heading heading-medium text-color-invert">Там есть мост дьявола</p>
             <p class="dignity__number text-number text-color-invert">№2</p>
-            <p class="dignity__description text-color-invert">Да, по нему можно пройти! Если вы
-              осмелитесь,
-              конечно</p>
+            <p class="dignity__description text-color-invert">Да, по нему можно пройти! Если вы осмелитесь, конечно.</p>
           </div>
-          <div class="benefits-list__pic-wrapper">
+          <div class="benefits-list__pic-wrapper benefits-list__pic-wrapper--left">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/index/desktop/mountains.jpg 1x, img/index/desktop/mountains@2x.jpg 2x">
@@ -150,7 +149,7 @@
         <p class="info-block__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
           гостиниц в
           седоне</p>
-        <a class="info-block__btn btn" href="#">Найти гостиницу</a>
+        <a class="info-block__btn btn" href="#" target="_blank">Найти гостиницу</a>
       </div>
 
       <iframe class="contact-us__map"
@@ -184,7 +183,7 @@
         </li>
       </ul>
 
-      <p class="main-footer__devs">Разработано</p>
+      <a class="main-footer__devs" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
   <script src="js/toggle-menu.js"></script>
