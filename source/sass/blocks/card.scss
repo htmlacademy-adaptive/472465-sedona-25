@@ -57,6 +57,10 @@
   }
 }
 
+.card__pic-link:hover .card__pic {
+  opacity: 0.85;
+}
+
 .card__info-wrapper {
   @media (min-width: $tablet-width) {
     padding: 1rem 20px;

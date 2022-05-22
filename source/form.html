@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link type="image/png" sizes="32x32" rel="icon" href="favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body page-body">
@@ -28,10 +31,10 @@
           <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link menu__item-link--current" href="form.html">Форма отзыва</a>
+          <a class="menu__item-link menu__item-link--current" href="#">Форма отзыва</a>
         </li>
         <li class="menu__item menu__item-last">
-          <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
+          <a class="menu__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
         </li>
       </menu>
       <button class="main-nav__togle-menu togle-menu"><span class="visually-hidden">Закрыть</span></button>
@@ -155,14 +158,12 @@
         </fieldset>
         <fieldset class="form__emotions fields fields--last">
           <legend class="fields__name">Опишите свои эмоции</legend>
-          <!-- <div class="fields__wrapper checker checker--last"> -->
           <textarea class="checker__msg" name="feedback" id="feedback" cols="30" rows="10"
             placeholder="Опишите подробно все свои восторги "></textarea>
           <div class="checker__submit-wrapper">
             <button class="checker__sumbit-btn btn">Отправить отзыв</button>
             <span class="checker__comment">* — обязательные поля</span>
           </div>
-          <!-- </div> -->
         </fieldset>
       </form>
     </section>
@@ -211,7 +212,7 @@
         </li>
       </ul>
 
-      <p class="main-footer__devs">Разработано</p>
+      <a class="main-footer__devs" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
   <script src="js/toggle-menu.js"></script>

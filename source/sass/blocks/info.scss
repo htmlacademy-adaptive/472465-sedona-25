@@ -2,16 +2,16 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 461px;
+  max-width: rem(461);
 }
 
 .info__text-content {
-  max-width: 470px;
+  max-width: rem(470);
   margin: 0 auto;
 }
 
 .info__text-content--main {
-  max-width: 530px;
+  max-width: rem(530);
 }
 
 .info__slogan-bg {

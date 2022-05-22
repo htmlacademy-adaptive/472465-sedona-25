@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
-  <link type="image/png" sizes="32x32" rel="icon" href="favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body page-body">
@@ -22,7 +25,7 @@
           <a class="menu__item-link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link menu__item-link--current" href="catalog.html">Фото и видиео</a>
+          <a class="menu__item-link menu__item-link--current" href="#">Фото и видиео</a>
         </li>
         <li class="menu__item menu__item--chost">
           <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
@@ -31,7 +34,7 @@
           <a class="menu__item-link" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item menu__item-last">
-          <a class="menu__item-link" href="https://htmlacademy.ru/">Html Academy</a>
+          <a class="menu__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
         </li>
       </menu>
       <button class="main-nav__togle-menu togle-menu togle-menu--show"><span
@@ -60,14 +63,16 @@
       <h2 class="visually-hidden">Галерея лучших мест городка Седона</h2>
       <ul class="gallery__list">
         <li class="gallery__list-item gallery__list-item--promo card">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog/desktop/cat_1.jpg 1x, img/catalog/desktop/cat_1@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog/tablet/cat_1.jpg 1x, img/catalog/tablet/cat_1@2x.jpg 2x">
-            <img class="card__pic card__pic--promo" src="img/catalog/mobile/cat_1.jpg"
-              srcset="img/catalog/mobile/cat_1@2x.jpg 2x" alt="дорога в закат" width="280" height="280">
-          </picture>
+          <a class="card__pic-link" href="img/catalog/mobile/cat_1.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_1.jpg 1x, img/catalog/desktop/cat_1@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_1.jpg 1x, img/catalog/tablet/cat_1@2x.jpg 2x">
+              <img class="card__pic card__pic--promo" src="img/catalog/mobile/cat_1.jpg"
+                srcset="img/catalog/mobile/cat_1@2x.jpg 2x" alt="дорога в закат" width="280" height="280">
+            </picture>
+          </a>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Неродные просторы</p>
@@ -82,19 +87,17 @@
             </p>
           </div>
         </li>
-
-
-
         <li class="gallery__list-item  card">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog/desktop/cat_2.jpg 1x, img/catalog/desktop/cat_2@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog/tablet/cat_2.jpg 1x, img/catalog/tablet/cat_2@2x.jpg 2x">
-            <img class="card__pic" src="img/catalog/mobile/cat_2.jpg" srcset="img/catalog/mobile/cat_2@2x.jpg 2x"
-              alt="растительность седоны" width="280" height="280">
-          </picture>
-
+          <a class="card__pic-link" href="img/catalog/mobile/cat_2.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_2.jpg 1x, img/catalog/desktop/cat_2@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_2.jpg 1x, img/catalog/tablet/cat_2@2x.jpg 2x">
+              <img class="card__pic" src="img/catalog/mobile/cat_2.jpg" srcset="img/catalog/mobile/cat_2@2x.jpg 2x"
+                alt="растительность седоны" width="280" height="280">
+            </picture>
+          </a>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Местная растительность</p>
@@ -110,14 +113,17 @@
           </div>
         </li>
         <li class="gallery__list-item  card">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_3@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog/tablet/cat_3.jpg 1x, img/catalog/tablet/cat_3@2x.jpg 2x">
-            <img class="card__pic" src="img/catalog/mobile/cat_3.jpg" srcset="img/catalog/mobile/cat_3@2x.jpg 2x"
-              alt="растительность седоны" width="280" height="280">
-          </picture>
+          <a class="card__pic-link" href="img/catalog/mobile/cat_3.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_3@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_3.jpg 1x, img/catalog/tablet/cat_3@2x.jpg 2x">
+
+              <img class="card__pic" src="img/catalog/mobile/cat_3.jpg" srcset="img/catalog/mobile/cat_3@2x.jpg 2x"
+                alt="растительность седоны" width="280" height="280">
+            </picture>
+          </a>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Дорога на север</p>
@@ -133,14 +139,16 @@
           </div>
         </li>
         <li class="gallery__list-item card ">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_4@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/catalog/tablet/cat_4.jpg 1x, img/catalog/tablet/cat_4@2x.jpg 2x">
-            <img class="card__pic" src="img/catalog/mobile/cat_4.jpg" srcset="img/catalog/mobile/cat_4@2x.jpg 2x"
-              alt="растительность седоны" width="280" height="280">
-          </picture>
+          <a class="card__pic-link" href="img/catalog/mobile/cat_4.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_4@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_4.jpg 1x, img/catalog/tablet/cat_4@2x.jpg 2x">
+              <img class="card__pic" src="img/catalog/mobile/cat_4.jpg" srcset="img/catalog/mobile/cat_4@2x.jpg 2x"
+                alt="растительность седоны" width="280" height="280">
+            </picture>
+          </a>
           <div class="card__info-wrapper">
             <div class="card__text-wrapper">
               <p class="card__heading heading-small">Мост дьявола</p>
@@ -204,7 +212,7 @@
         </li>
       </ul>
 
-      <p class="main-footer__devs">Разработано</p>
+      <a class="main-footer__devs" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
   <script src="js/toggle-menu.js"></script>

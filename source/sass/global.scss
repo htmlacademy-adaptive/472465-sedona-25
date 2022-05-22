@@ -2,7 +2,7 @@
 
 :root {
   box-sizing: border-box;
-  font-size: 0.88em;
+  font-size: calc($root-font-size / $initial-font-size) + em;
 }
 
 *,
