@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: stretch;
   width: 100%;
-  padding: 0 20px 1rem;
+  padding: 0 rem(20) rem(14);
 
   border-bottom: 1px solid $btn-dsbled-bg;
 
@@ -23,30 +23,30 @@
     grid-template-rows: repeat(autofill, 1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    padding: 0 2.57rem;
+    padding: 0 rem(36);
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    padding: 0 3.14rem;
+    padding: 0 rem(44);
   }
 }
 
 .fields--tile-skiny {
   @media (min-width: $tablet-width) {
-    padding: 0 6rem;
+    padding: 0 rem(84);
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0 3.14rem;
+    padding: 0 rem(44);
   }
 }
 
 
 .fields__wrapper {
-  padding: 0 1.42rem;
+  padding: 0 rem(20);
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -65,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 96px;
+    padding: 0 rem(96);
   }
 }
 
@@ -74,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    padding-right: 3rem;
+    padding-right: rem(42);
   }
 }
 
@@ -83,7 +83,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 0;
-    padding-left: 3rem;
+    padding-left: rem(42);
   }
 }
 
@@ -94,19 +94,19 @@
 .fields__name {
   margin: 0 auto;
   text-align: center;
-  max-width: 340px;
+  max-width: rem(340);
 
-  @include heading-style(1.29rem);
-  padding: 1.7rem 0.5rem 1.42rem;
+  @include heading-style(rem(18));
+  padding: rem(24) rem(7) rem(20);
 
   @media (min-width: $tablet-width) {
-    padding: 1.7rem 40px 1.42rem;
+    padding: rem(24) rem(40) rem(20);
   }
 }
 
 .fields__name--start {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: rem(7);
+  padding-right: rem(7);
 }
 
 .fields__name--dashed {
@@ -121,8 +121,8 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     content: "";
-    flex-basis: 123px;
-    height: 1px;
+    flex-basis: rem(123);
+    height: rem(1);
     background-color: $fadded-color;
     vertical-align: middle;
     flex-grow: 1;
@@ -131,18 +131,18 @@
 
 .fields__name--dashed::before {
   @media (min-width: $tablet-width) {
-    margin-right: 4.5rem;
+    margin-right: rem(63);
   }
 }
 
 .fields__name--dashed::after {
   @media (min-width: $tablet-width) {
-    margin-left: 4.5rem;
+    margin-left: rem(63);
   }
 }
 
 .fields__item {
-  margin-bottom: 1.14rem;
+  margin-bottom: rem(16);
   flex-grow: 1;
 }
 

@@ -6,11 +6,11 @@
   justify-content: center;
   background-color: $die-color;
   text-transform: uppercase;
-  min-height: 191px;
-  padding: 1rem;
+  min-height: rem(191);
+  padding: rem(14);
 
   @media (min-width: $tablet-width) {
-    min-height: 256px;
+    min-height: rem(256);
   }
 }
 
@@ -21,17 +21,17 @@
 
 .dignity__heading {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: rem(19);
 
   @include block-width($mobile-width, 260px);
 
   @media (min-width: $tablet-width) {
-    max-width: 150px;
+    max-width: rem(180);
   }
 }
 
 .dignity__number {
-  margin-bottom: 20px;
+  margin-bottom: rem(19);
 }
 
 .dignity__description {
@@ -43,11 +43,11 @@
 .dignity__description--undeline::after {
   position: absolute;
   bottom: 0;
-  left: 18px;
-  right: 18px;
+  left: rem(18);
+  right: rem(18);
   display: inline-block;
   content: "";
-  height: 1px;
+  height: rem(1);
   background-color: $undelines-clr;
 
   @media (min-width: $tablet-width) {

@@ -8,8 +8,8 @@
 .main-nav__togle-menu {
   z-index: 4;
   position: absolute;
-  right: 20px;
-  top: 17px;
+  right: rem(20);
+  top: rem(17);
 
   @media (min-width: $tablet-width) {
     display: none;

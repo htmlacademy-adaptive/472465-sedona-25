@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 1.7rem 1.42rem;
+  padding: rem(24) rem(20);
 
 
   @media (min-width: $tablet-width) {
@@ -41,19 +41,19 @@
 
 .card__pic {
   display: block;
-  min-width: 200px;
+  min-width: rem(200);
   object-fit: contain;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     object-fit: cover;
-    max-height: 400px;
+    max-height: rem(400);
   }
 }
 
 .card__pic--promo {
   @media (min-width: $tablet-width) {
-    min-height: 400px;
+    min-height: rem(400);
   }
 }
 
@@ -63,7 +63,7 @@
 
 .card__info-wrapper {
   @media (min-width: $tablet-width) {
-    padding: 1rem 20px;
+    padding: rem(14) rem(20);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,19 +90,19 @@
 }
 
 .card__heading {
-  margin-top: 15px;
-  margin-bottom: 12px;
+  margin-top: rem(15);
+  margin-bottom: ren(12);
 
   @media (min-width: $tablet-width) {
-    margin-top: 1px;
+    margin-top: rem(1);
   }
 }
 
 .card__info {
-  margin-bottom: 16px;
+  margin-bottom: rem(16);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 2px;
+    margin-bottom: rem(2);
   }
 }
 
@@ -111,7 +111,7 @@
   flex-wrap: nowrap;
 
   @media (min-width: $tablet-width) {
-    padding-left: 1rem;
+    padding-left: rem(14);
   }
 }
 
@@ -119,10 +119,10 @@
   border: none;
   padding: 0;
   background-color: transparent;
-  font-size: 21px;
+  font-size: rem(21);
   color: rgba(#000000, 0.3);
   cursor: pointer;
-  margin-right: 12px;
+  margin-right: rem(12);
 
   @media (min-width: $desktop-width) {
     color: #ffffff;

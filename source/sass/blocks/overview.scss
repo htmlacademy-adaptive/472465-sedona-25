@@ -1,22 +1,22 @@
 .overview {
   width: 100%;
-  padding: 0 1.43rem;
+  padding: 0 rem(20);
 
   @media (min-width: $tablet-width) {
-    padding: 0 4.3rem 2.86rem;
+    padding: rem(60) rem(40);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 14.3rem 6.15rem;
+    padding: 0 rem(200) rem(86);
   }
 }
 
 .overview__text {
   margin: 0 auto;
-  max-width: 475px;
+  max-width: rem(475);
 }
 
 .overview__video {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: rem(800);
 }

@@ -5,38 +5,38 @@
   justify-content: center;
   background-color: $main-bg-color;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: rem(14);
 }
 
 .info-block__heading {
   word-break: normal;
-  margin-top: 47px;
-  margin-bottom: 37px;
+  margin-top: rem(47);
+  margin-bottom: rem(37);
   text-align: center;
-  max-width: 440px;
+  max-width: rem(440);
 
   @include block-width($mobile-width, 256px);
 }
 
 .info-block__text {
   text-align: center;
-  max-width: 520px;
-  margin-bottom: 44px;
+  max-width: rem(520);
+  margin-bottom: rem(44);
 }
 
 .info-block__btn {
   border: none;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: rem(35);
 
   @media (min-width: $tablet-width) {
-    max-width: 458px;
+    max-width: rem(458);
   }
 }
 
 .info-block__btn-wrapper {
   width: 100%;
-  min-height: 98px;
+  min-height: rem(98);
   display: flex;
   justify-content: center;
   align-items: center;

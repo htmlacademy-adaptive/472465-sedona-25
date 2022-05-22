@@ -5,12 +5,12 @@
   padding: 1rem  1rem 1rem 70px;
   list-style: none;
   text-transform: uppercase;
-  min-height: 141px;
+  min-height: rem(141);
 
   @media (min-width: $tablet-width) {
     align-items: center;
     padding: 63px 1rem 1rem;
-    min-height: 332px;
+    min-height: rem(332);
   }
 }
 
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    max-width: 200px;
+    max-width: rem(200);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,10 +32,10 @@
 .availability__heading::before {
   position: absolute;
   top: 0;
-  left: -49px;
+  left: rem(-49);
   content: "";
   display: block;
-  padding: 20px;
+  padding: rem(20);
   background-image: url("../img/icons/house.svg");
   background-position: center;
   background-size: 100% 100%;
@@ -44,8 +44,8 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: inline-flex;
-    padding: 38px;
-    margin-bottom: 20px;
+    padding: rem(38);
+    margin-bottom: rem(20);
   }
 }
 
@@ -62,6 +62,6 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    max-width: 280px;
+    max-width: rem(280);
   }
 }
