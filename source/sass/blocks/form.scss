@@ -13,11 +13,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 0 60px;
+    padding: 0 rem(60);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    padding: 0 rem(120);
   }
 }
 
@@ -34,8 +34,8 @@
   grid-area: impressions;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: rem(25);
+    margin-bottom: rem(25);
   }
 }
 
@@ -43,15 +43,15 @@
   grid-area: attractions;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: rem(25);
   }
 }
 
 .form__emotions {
   grid-area: emotions;
-  margin-bottom: 24px;
+  margin-bottom: rem(24);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: rem(64);
   }
 }

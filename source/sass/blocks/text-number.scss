@@ -9,9 +9,9 @@
 }
 
 .text-number::before {
-  margin-right: 4px;
+  margin-right: rem(4);
 }
 
 .text-number::after {
-  margin-left: 4px;
+  margin-left: rem(4);
 }

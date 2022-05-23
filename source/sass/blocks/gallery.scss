@@ -7,8 +7,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-left: 4.28rem;
-    padding-right: 4.28rem;
+    padding-left: rem(60);
+    padding-right: rem(60);
   }
 
   @media (min-width: $desktop-width) {

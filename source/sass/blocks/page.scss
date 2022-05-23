@@ -1,5 +1,5 @@
 .page {
-  min-width: 210px;
+  min-width: rem(210);
   height: 100%;
   background: $page-clr;
 }
@@ -28,7 +28,7 @@
 
 .page-body__header {
   grid-area: header;
-  min-height: 56px;
+  min-height: rem(56);
 }
 
 .page__content {

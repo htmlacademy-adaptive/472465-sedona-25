@@ -3,8 +3,8 @@
   align-content: center;
   background-color: $main-bg-color;
   text-transform: uppercase;
-  padding-top: 2.57rem;
-  padding-bottom: 2.57rem;
+  padding-top: rem(36);
+  padding-bottom: rem(36);
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -32,10 +32,10 @@
 
 .main-footer__hash {
   text-align: center;
-  font-size: 21px;
-  line-height: 1em;
+  font-size: rem(21);
+  line-height: rem(14);
   font-weight: bold;
-  margin-bottom: 2.85rem;
+  margin-bottom: rem(40);
 
 
   @include adapt-width($mobile-width, 284px);
@@ -47,7 +47,7 @@
 }
 
 .main-footer__social {
-  margin-bottom: 2.85rem;
+  margin-bottom: rem(40);
 
   @include adapt-width($mobile-width, 284px);
 
@@ -58,8 +58,10 @@
 }
 
 .main-footer__devs {
+  text-decoration: none;
+  color: $page-font-color;
   text-align: center;
-  line-height: 1em;
+  line-height: rem(14);
 
   @include adapt-width($mobile-width, 284px);
 
@@ -69,12 +71,12 @@
 }
 
 .main-footer__devs::after {
-  font-size: 34px;
+  font-size: rem(34);
   display: inline-block;
   vertical-align: middle;
   font-family: "sedona_icons", "Arial", sans-serif;
   content: "\e900";
-  margin-left: 13px;
+  margin-left: rem(13);
 }
 
 .main-footer__devs:hover {

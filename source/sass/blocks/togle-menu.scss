@@ -1,12 +1,12 @@
 @mixin toggle-parametrs() {
-  width: 23px;
-  height: 4px;
+  width: rem(23);
+  height: rem(4);
   background-color: $die-color;
 }
 
 .togle-menu {
-  width: 22px;
-  height: 23px;
+  width: rem(22);
+  height: rem(23);
   border: none;
   background-color: transparent;
 }
@@ -42,7 +42,7 @@
 }
 
 .togle-menu::after {
-  top: 18px;
+  top: rem(18);
 
   @include toggle-parametrs;
 }

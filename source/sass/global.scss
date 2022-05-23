@@ -2,7 +2,7 @@
 
 :root {
   box-sizing: border-box;
-  font-size: 0.88em;
+  font-size: calc($root-font-size / $initial-font-size) + em;
 }
 
 *,
@@ -50,7 +50,7 @@
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   line-height: 1;
 }
@@ -77,17 +77,17 @@ img {
 }
 
 .heading-large {
-  @include heading-style(18px);
+  @include heading-style(rem(18));
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
+    font-size: rem(30);
   }
 }
 
 .heading-Xlarge {
-  @include heading-style(1.5rem);
+  @include heading-style(rem(21));
 
   @media (min-width: $tablet-width) {
-    font-size: 2.14rem;
+    font-size: rem(30);
   }
 }
