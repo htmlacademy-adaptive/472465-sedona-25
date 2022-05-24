@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/472465-sedona-25/11/">
+</head>
+
+<body class="page__body page-body">
+
+  <header class="page-body__header main-header">
+
+    <nav class="main-nav main-header__wrapper">
+      <a class="main-nav__logo logo " href="index.html">
+        <svg class="logo__img" width="185" height="96">
+          <use xlink:href="img/icons/sprites.svg#logo"></use>
+        </svg>
+      </a>
+      <menu class="main-nav__menu menu">
+        <li class="menu__item menu__item--current">
+          <a class="menu__item-link" href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link menu__item-link--current" href="#">Фото и видиео</a>
+        </li>
+        <li class="menu__item menu__item--chost">
+          <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__item-link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="menu__item menu__item-last">
+          <a class="menu__item-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+        </li>
+      </menu>
+      <button class="main-nav__togle-menu togle-menu togle-menu--show"><span
+          class="visually-hidden">Закрыть</span></button>
+    </nav>
+
+  </header>
+
+  <main class="page__content content gallery">
+    <h1 class="visually-hidden">Фотогалерея городка Седона</h1>
+    <section class="gallery__info info">
+      <h2 class="visually-hidden">Несколько слов о странице</h2>
+      <div class="info__slogan-bg">
+        <svg class="info__slogan" width="282" height="49">
+          <use xlink:href="img/icons/sprites.svg#logo-bg-single"></use>
+        </svg>
+      </div>
+      <div class="info__text-content info-block">
+        <p class="info-block__heading heading-large">Фото и видео</p>
+        <p class="info-block__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+          о
+          политике и экономике.</p>
+      </div>
+    </section>
+
+    <section class="gallery__content">
+      <h2 class="visually-hidden">Галерея лучших мест городка Седона</h2>
+      <ul class="gallery__list">
+        <li class="gallery__list-item gallery__list-item--promo card">
+          <a class="card__pic-link" href="img/catalog/mobile/cat_1.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="img/catalog/desktop/cat_1.webp 1x, img/catalog/desktop/cat_1@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_1.webp 1x, img/catalog/tablet/cat_1@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_1.jpg 1x, img/catalog/desktop/cat_1@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_1.jpg 1x, img/catalog/tablet/cat_1@2x.jpg 2x">
+              <img class="card__pic card__pic--promo" src="img/catalog/mobile/cat_1.jpg"
+                srcset="img/catalog/mobile/cat_1@2x.jpg 2x" alt="дорога в закат" width="280" height="280">
+            </picture>
+          </a>
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Неродные просторы</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Борис</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">1350</span>
+            </p>
+          </div>
+        </li>
+        <li class="gallery__list-item  card">
+          <a class="card__pic-link" href="img/catalog/mobile/cat_2.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_2.jpg 1x, img/catalog/desktop/cat_2@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_2.jpg 1x, img/catalog/tablet/cat_2@2x.jpg 2x">
+              <img class="card__pic" src="img/catalog/mobile/cat_2.jpg" srcset="img/catalog/mobile/cat_2@2x.jpg 2x"
+                alt="растительность седоны" width="280" height="280">
+            </picture>
+          </a>
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Местная растительность</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Сергей</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">143</span>
+            </p>
+          </div>
+        </li>
+        <li class="gallery__list-item  card">
+          <a class="card__pic-link" href="img/catalog/mobile/cat_3.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_3@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_3.jpg 1x, img/catalog/tablet/cat_3@2x.jpg 2x">
+
+              <img class="card__pic" src="img/catalog/mobile/cat_3.jpg" srcset="img/catalog/mobile/cat_3@2x.jpg 2x"
+                alt="растительность седоны" width="280" height="280">
+            </picture>
+          </a>
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Дорога на север</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Пётр</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">96</span>
+            </p>
+          </div>
+        </li>
+        <li class="gallery__list-item card ">
+          <a class="card__pic-link" href="img/catalog/mobile/cat_4.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/cat_4.jpg 1x, img/catalog/desktop/cat_4@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_4.jpg 1x, img/catalog/tablet/cat_4@2x.jpg 2x">
+              <img class="card__pic" src="img/catalog/mobile/cat_4.jpg" srcset="img/catalog/mobile/cat_4@2x.jpg 2x"
+                alt="растительность седоны" width="280" height="280">
+            </picture>
+          </a>
+          <div class="card__info-wrapper">
+            <div class="card__text-wrapper">
+              <p class="card__heading heading-small">Мост дьявола</p>
+              <p class="card__info">
+                <span class="card__author">Автор фото:</span>
+                <span class="card__author-name">Антон</span>
+              </p>
+            </div>
+            <p class="card__like-wrapper">
+              <button class="card__like-btn"><span class="visually-hidden">Нравится или не нравится</span></button>
+              <span class="card__like-count">254</span>
+            </p>
+          </div>
+        </li>
+
+
+      </ul>
+    </section>
+    <section class="gallery__overview overview">
+      <h2 class="visually-hidden">Видео обзор городка Седона</h2>
+
+
+      <div class="overview__text info-block">
+        <p class="info-block__heading heading-large">Все еще сомневаетесь?</p>
+        <p class="info-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
+
+      <div class="overview__video video">
+        <video class="video__item" poster="img/cat_video.jpg" controls preload="metadata">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/mp4">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/webm">
+          <source src="https://youtu.be/-pjw1_GucsA" type="video/ogg">
+
+        </video>
+      </div>
+    </section>
+
+  </main>
+  <footer class="page-body__footer main-footer">
+    <div class="main-footer__wrapper">
+      <p class="main-footer__hash  heading-text">
+        #visitsedona
+      </p>
+
+      <ul class="main-footer__social  social">
+        <li class="social__item">
+          <a href="#" class="social__item-link ">
+            <span class="visually-hidden">переход во Вконтакте</span>
+            <svg class="social__item-icon" width="24" height="14">
+              <use xlink:href="img/icons/sprites.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__item-link ">
+            <span class="visually-hidden">переход в Телеграм</span>
+            <svg class="social__item-icon" width="22" height="18">
+              <use xlink:href="img/icons/sprites.svg#tm"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__item-link ">
+            <span class="visually-hidden">переход на Youtube</span>
+            <svg class="social__item-icon" width="20" height="14">
+              <use xlink:href="img/icons/sprites.svg#yt"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <a class="main-footer__devs" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <svg class="main-footer__devs-icon" width="27" height="35">
+          <use xlink:href="img/icons/sprites.svg#academy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/toggle-menu.js"></script>
+  <script src="js/picturefill.js"></script>
+</body>
+
+</html>
