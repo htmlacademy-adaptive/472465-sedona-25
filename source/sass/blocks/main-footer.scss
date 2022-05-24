@@ -58,6 +58,9 @@
 }
 
 .main-footer__devs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: $page-font-color;
   text-align: center;
@@ -70,15 +73,6 @@
   }
 }
 
-.main-footer__devs::after {
-  font-size: rem(34);
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "sedona_icons", "Arial", sans-serif;
-  content: "\e900";
-  margin-left: rem(13);
-}
-
 .main-footer__devs:hover {
   color: $academy-hover;
   cursor: pointer;
@@ -86,4 +80,10 @@
 
 .main-footer__devs:active {
   color: $academy-active;
+}
+
+
+.main-footer__devs-icon {
+  fill: currentColor;
+  margin-left: rem(13);
 }

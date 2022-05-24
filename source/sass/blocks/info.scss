@@ -2,7 +2,9 @@
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: rem(461);
+  height: auto;
+  max-width: rem(462);
+  fill: currentColor;
 }
 
 .info__text-content {
@@ -17,6 +19,7 @@
 .info__slogan-bg {
   position: relative;
   text-align: center;
+  color: #ffffff;
   padding: 6.43rem 1.36rem;
   background-image: url("../img/info-bg-decor.png"), url("../img/background/mobile/bg.jpg");
   background-size: $desktop-width, cover;
