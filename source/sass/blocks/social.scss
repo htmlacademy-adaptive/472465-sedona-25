@@ -34,20 +34,6 @@
   color: rgba(#ffffff, 0.4);
 }
 
-.social__item-link::before {
-  display: inline-flex;
-  font-family: "sedona_icons", "Arial", sans-serif;
-  font-size: rem(15);
-}
-
-.social__item-link--vk::before {
-  content: "\e903";
-}
-
-.social__item-link--tg::before {
-  content: "\e902";
-}
-
-.social__item-link--yt::before {
-  content: "\e901";
+.social__item-icon {
+  fill: currentColor;
 }

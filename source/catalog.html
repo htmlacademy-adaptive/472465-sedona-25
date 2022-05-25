@@ -18,7 +18,9 @@
 
     <nav class="main-nav main-header__wrapper">
       <a class="main-nav__logo logo " href="index.html">
-        <img class="logo__img" src="img/logo.svg" alt="логотип края Седона" width="185" height="96">
+        <svg class="logo__img" width="185" height="96">
+          <use xlink:href="img/icons/sprites.svg#logo"></use>
+        </svg>
       </a>
       <menu class="main-nav__menu menu">
         <li class="menu__item menu__item--current">
@@ -48,8 +50,9 @@
     <section class="gallery__info info">
       <h2 class="visually-hidden">Несколько слов о странице</h2>
       <div class="info__slogan-bg">
-        <img class="info__slogan" src="img/background/intro_slogan_light.svg" alt="Слоган города Седона" width="460"
-          height="350">
+        <svg class="info__slogan" width="282" height="49">
+          <use xlink:href="img/icons/sprites.svg#logo-bg-single"></use>
+        </svg>
       </div>
       <div class="info__text-content info-block">
         <p class="info-block__heading heading-large">Фото и видео</p>
@@ -65,6 +68,11 @@
         <li class="gallery__list-item gallery__list-item--promo card">
           <a class="card__pic-link" href="img/catalog/mobile/cat_1.jpg" target="_blank">
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="img/catalog/desktop/cat_1.webp 1x, img/catalog/desktop/cat_1@2x.webp 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/cat_1.webp 1x, img/catalog/tablet/cat_1@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/desktop/cat_1.jpg 1x, img/catalog/desktop/cat_1@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -142,7 +150,7 @@
           <a class="card__pic-link" href="img/catalog/mobile/cat_4.jpg" target="_blank">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/desktop/cat_3.jpg 1x, img/catalog/desktop/cat_4@2x.jpg 2x">
+                srcset="img/catalog/desktop/cat_4.jpg 1x, img/catalog/desktop/cat_4@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/catalog/tablet/cat_4.jpg 1x, img/catalog/tablet/cat_4@2x.jpg 2x">
               <img class="card__pic" src="img/catalog/mobile/cat_4.jpg" srcset="img/catalog/mobile/cat_4@2x.jpg 2x"
@@ -196,23 +204,37 @@
 
       <ul class="main-footer__social  social">
         <li class="social__item">
-          <a href="#" class="social__item-link social__item-link--vk">
-            <span class="visually-hidden">Вконтакте</span>
+          <a href="#" class="social__item-link ">
+            <span class="visually-hidden">переход во Вконтакте</span>
+            <svg class="social__item-icon" width="24" height="14">
+              <use xlink:href="img/icons/sprites.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__item-link social__item-link--tg">
-            <span class="visually-hidden">Телеграм</span>
+          <a href="#" class="social__item-link ">
+            <span class="visually-hidden">переход в Телеграм</span>
+            <svg class="social__item-icon" width="22" height="18">
+              <use xlink:href="img/icons/sprites.svg#tm"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__item-link social__item-link--yt">
-            <span class="visually-hidden">Youtube</span>
+          <a href="#" class="social__item-link ">
+            <span class="visually-hidden">переход на Youtube</span>
+            <svg class="social__item-icon" width="20" height="14">
+              <use xlink:href="img/icons/sprites.svg#yt"></use>
+            </svg>
           </a>
         </li>
       </ul>
 
-      <a class="main-footer__devs" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      <a class="main-footer__devs" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <svg class="main-footer__devs-icon" width="27" height="35">
+          <use xlink:href="img/icons/sprites.svg#academy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
   <script src="js/toggle-menu.js"></script>
