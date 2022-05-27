@@ -14,27 +14,17 @@
 
 @font-face {
   font-family: "ptsansB";
-  src: local("ptsansB"), url("../fonts/ptsansb.woff") format("woff"), url("../fonts/ptsansb.woff2") format("woff2");
+  src: local("ptsansB"), url("../fonts/ptsansb.woff2") format("woff2"), url("../fonts/ptsansb.woff") format("woff");
   font-weight: 700;
   font-style: bold;
 }
 
 @font-face {
   font-family: "ptsans";
-  src: local("ptsans"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+  src: local("ptsans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
-// icon fonts
-@font-face {
-  font-family: "sedona_icons";
-  src: url("../fonts/sedona_icons.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-// icon fonts
 
 .visually-hidden {
   position: absolute;
