@@ -63,7 +63,7 @@
   padding: rem(20);
   background-image: url("../img/icons/house.svg");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -80,6 +80,7 @@
 
 .availability__heading--present::before {
   background-image: url("../img/icons/present.svg");
+  padding: rem(19)
 }
 
 .availability__heading--last {
