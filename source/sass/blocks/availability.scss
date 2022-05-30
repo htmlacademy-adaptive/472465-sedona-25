@@ -2,26 +2,51 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem  1rem 1rem 70px;
+  padding: rem(14) rem(14) rem(14) rem(70);
   list-style: none;
   text-transform: uppercase;
-  min-height: rem(141);
+  min-height: rem(140);
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    padding: 63px 1rem 1rem;
-    min-height: rem(332);
+    padding: rem(14);
+    min-height: rem(330);
+  }
+}
+
+.availability--crooked-handed {
+  min-height: rem(100);
+}
+
+.availability--first {
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+
+  @media (min-width: $tablet-width) {
+    padding: rem(14);
+  }
+}
+
+.availability--last {
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  min-height: rem(150);
+
+  @media (min-width: $tablet-width) {
+    padding: rem(14);
   }
 }
 
 .availability__heading {
   position: relative;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: rem(23);
+  margin-bottom: rem(12);
   text-align: left;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-top: rem(46);
+    margin-bottom: rem(16);
     max-width: rem(200);
     display: flex;
     flex-direction: column;
@@ -31,8 +56,8 @@
 
 .availability__heading::before {
   position: absolute;
-  top: 0;
-  left: rem(-49);
+  top: rem(-5);
+  left: rem(-52);
   content: "";
   display: block;
   padding: rem(20);
@@ -44,7 +69,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: inline-flex;
-    padding: rem(38);
+    padding: rem(36);
     margin-bottom: rem(20);
   }
 }
@@ -57,11 +82,64 @@
   background-image: url("../img/icons/present.svg");
 }
 
+.availability__heading--last {
+  margin-top: rem(6);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(46);
+  }
+}
+
+.availability__heading--crooked-handed {
+  margin-top: rem(10);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(46);
+  }
+}
+
 .availability__desc {
   text-align: left;
 
+  @include block-width($mobile-width, 280px);
+
   @media (min-width: $tablet-width) {
     text-align: center;
-    max-width: rem(280);
+
+    @include block-width(256px, 219px);
+  }
+}
+
+.availability__desc--first {
+  @media (min-width: $tablet-width) {
+    @include block-width(256px, 214px);
+  }
+}
+
+.availability__desc--crooked-handed {
+  @include block-width($mobile-width, 315px);
+
+  @media (min-width: $tablet-width) {
+    @include block-width(256px, 165px);
+  }
+}
+
+.availability:nth-of-type(2) .availability__desc {
+  @media (min-width: $desktop-width) {
+    @include block-width(calc($desktop-width / 3), 320px);
+  }
+}
+
+.availability:nth-of-type(3) .availability__desc {
+  @media (min-width: $desktop-width) {
+    @include block-width(calc($desktop-width / 3), 300px);
+  }
+}
+
+.availability__desc--break {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

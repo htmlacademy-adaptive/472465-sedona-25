@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: $die-color;
   text-transform: uppercase;
   min-height: rem(191);
@@ -14,30 +14,130 @@
   }
 }
 
-.dignity--slightly {
-  background-color: $neutral-die-color;
+.dignity--decored {
+  justify-content: flex-start;
+  min-height: rem(228);
+
+  @media (min-width: $tablet-width) {
+    min-height: rem(256);
+  }
 }
 
+.dignity--slightly {
+  background-color: $neutral-die-color;
+  min-height: rem(167);
+
+  @media (min-width: $tablet-width) {
+    min-height: rem(256);
+  }
+}
 
 .dignity__heading {
   text-align: center;
-  margin-bottom: rem(19);
+  margin-bottom: rem(7);
 
   @include block-width($mobile-width, 260px);
 
   @media (min-width: $tablet-width) {
-    max-width: rem(180);
+    margin-top: rem(26);
+    margin-bottom: rem(10);
+    max-width: rem(150);
+    line-height: 1.33;
+  }
+}
+
+.dignity__heading--first {
+  margin-top: rem(20);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(29);
+    margin-bottom: rem(12);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: rem(36);
+  }
+}
+
+.dignity__heading--decored {
+  margin-top: rem(53);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(26);
+    line-height: 1.3;
+    margin-bottom: rem(12);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: rem(33);
+  }
+}
+
+.dignity__heading--slightly {
+  margin-top: rem(7);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(28);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: rem(29);
   }
 }
 
 .dignity__number {
-  margin-bottom: rem(19);
+  margin-bottom: rem(17);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: rem(25);
+  }
+}
+
+.dignity__number--decored {
+  @media (min-width: $tablet-width) {
+    margin-bottom: rem(22);
+  }
 }
 
 .dignity__description {
   text-align: center;
 
-  @include block-width($mobile-width, 260px);
+  @include block-width($mobile-width, 315px);
+
+  @media (min-width: $tablet-width) {
+    @include block-width(256px, 200px);
+  }
+}
+
+.dignity__description--decored {
+  @media (min-width: $tablet-width) {
+    @include block-width(256px, 220px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-width(400px, 300px);
+  }
+}
+
+.dignity--slightly:nth-of-type(2) .dignity__description,
+.dignity--slightly:nth-of-type(3) .dignity__description {
+  @media (min-width: $tablet-width) {
+    @include block-width(256px, 165px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include block-width(calc($desktop-width / 3), 290px);
+  }
+}
+
+.dignity__description--first {
+  @media (min-width: $desktop-width) {
+    @include block-width(calc($desktop-width / 3), 240px);
+  }
+}
+
+.dignity__description--slightly {
+  @include block-width($mobile-width, 280px);
 }
 
 .dignity__description--undeline::after {

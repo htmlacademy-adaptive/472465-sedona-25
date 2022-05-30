@@ -59,10 +59,10 @@ img {
 }
 
 .heading-medium {
-  @include heading-style(1.29rem);
+  @include heading-style(rem(18));
 
   @media (min-width: $tablet-width) {
-    font-size: 1.5rem;
+    font-size: rem(21);
   }
 }
 
