@@ -1,3 +1,4 @@
+/* stylelint-disable */
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sourcemap from 'gulp-sourcemaps';
@@ -14,7 +15,7 @@ import svgstore from 'gulp-svgstore';
 import del from 'del';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
-
+/* stylelint-enable */
 
 // Styles
 

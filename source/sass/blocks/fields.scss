@@ -27,8 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0 rem(44);
   }
 }
@@ -39,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    grid-template-columns: repeat(4, 1fr);
     padding: 0 rem(44);
   }
 }

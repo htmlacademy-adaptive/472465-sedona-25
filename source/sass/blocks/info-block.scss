@@ -2,32 +2,95 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: $main-bg-color;
   text-transform: uppercase;
   padding: rem(14);
+
+  @media (min-width: $tablet-width) {
+    min-height: rem(205);
+  }
+}
+
+.info-block--contact {
+  min-height: rem(290);
+
+  @media (min-width: $tablet-width) {
+    min-height: rem(318);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: rem(330);
+  }
 }
 
 .info-block__heading {
   word-break: normal;
-  margin-top: rem(47);
-  margin-bottom: rem(37);
+  margin-top: rem(19);
+  margin-bottom: rem(32);
   text-align: center;
   max-width: rem(440);
+  line-height: 1.52;
 
-  @include block-width($mobile-width, 256px);
+  @include block-width($mobile-width, 280px);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(32);
+    margin-bottom: rem(25);
+    line-height: 1.38;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: rem(44);
+  }
+}
+
+.info-block__heading--contact {
+  margin-top: rem(23);
+  margin-bottom: rem(17);
+
+  @media (min-width: $tablet-width) {
+    margin-top: rem(37);
+    margin-bottom: rem(26);
+  }
 }
 
 .info-block__text {
   text-align: center;
   max-width: rem(520);
-  margin-bottom: rem(44);
+  margin-bottom: rem(3);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: rem(15);
+  }
+}
+
+.info-block__text--contact {
+  margin-bottom: rem(31);
+
+  @media (min-width: $tablet-width) {
+    @include block-width($tablet-width, 480px);
+    margin-bottom: rem(42);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: rem(47);
+  }
+}
+
+.info-block__text--break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .info-block__btn {
   border: none;
-  width: 100%;
-  margin-bottom: rem(35);
+
+  @include block-width($mobile-width, 315px);
+  margin-bottom: rem(20);
 
   @media (min-width: $tablet-width) {
     max-width: rem(458);

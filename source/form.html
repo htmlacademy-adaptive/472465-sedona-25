@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansb.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/favicons/apple.png">
@@ -27,10 +29,7 @@
           <a class="menu__item-link" href="index.html">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link" href="catalog.html">Фото и видиео</a>
-        </li>
-        <li class="menu__item menu__item--chost">
-          <a class="menu__item-link" href="№"><span class="visually-hidden">Заглушка</span></a>
+          <a class="menu__item-link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="menu__item">
           <a class="menu__item-link menu__item-link--current" href="#">Форма отзыва</a>
@@ -98,6 +97,7 @@
             </div>
             <label class="checker__label" for="phone">Контактный телефон*</label>
           </div>
+
           <div class="fields__item fields__item--start checker">
             <div class="checker__pic-wraper">
               <input class="checker__field" type="email" name="mail" id="mail" placeholder="Введите e-mail" required>
@@ -120,9 +120,10 @@
 
             <input class="checker__choose" type="radio" name="impression" id="positive" value="pos" checked>
             <label class="checker__label checker__label--choose" for="positive"><span
-                class="checker__thing checker__thing--radio"></span>Скорее
+                class="checker__thing checker__thing--radio" tabindex="-1"></span>Скорее
               положительное</label>
           </div>
+
           <div class="fields__item  checker">
 
             <input class="checker__choose" type="radio" name="impression" id="negative" value="neg">
@@ -241,8 +242,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/toggle-menu.js"></script>
-  <script src="js/picturefill.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

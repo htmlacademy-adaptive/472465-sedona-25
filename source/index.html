@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansb.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/favicons/apple.png">
@@ -28,10 +30,7 @@
           <a class="menu__item-link menu__item-link--current" href="#">Главная</a>
         </li>
         <li class="menu__item">
-          <a class="menu__item-link" href="catalog.html">Фото и видиео</a>
-        </li>
-        <li class="menu__item menu__item--chost">
-          <a class="menu__item-link" href="#"><span class="visually-hidden">Заглушка</span></a>
+          <a class="menu__item-link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="menu__item">
           <a class="menu__item-link" href="form.html">Форма отзыва</a>
@@ -49,7 +48,7 @@
   <main class="page__content content">
     <h1 class="visually-hidden">О городке Седона</h1>
 
-    <section class="content__info info">
+    <section class="content__info info info ">
       <h2 class="visually-hidden">Вступительная речь</h2>
       <div class="info__slogan-bg">
         <svg class="info__slogan" width="460" height="350">
@@ -63,14 +62,16 @@
       </div>
     </section>
 
-    <section class="content__benefits">
+    <section class="content__benefits benefits">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="benefits-list">
         <li class="benefits-list__item">
-          <div class="benefits-list__item-tile dignity">
-            <p class="dignity__heading heading-medium text-color-invert">Настоящий городок</p>
-            <p class="dignity__number text-number text-color-invert">№1</p>
-            <p class="dignity__description text-color-invert">Седона не аттракцион для туристов,там течёт своя жизнь</p>
+          <div class="benefits-list__item-tile dignity dignity--decored">
+            <p class="dignity__heading heading-medium text-color-invert dignity__heading--decored">Настоящий городок</p>
+            <p class="dignity__number text-number dignity__number--decored text-color-invert">№1</p>
+            <p class="dignity__description  dignity__description--decored text-color-invert">Седона не аттракцион для
+              туристов, там течёт своя жизнь
+            </p>
           </div>
           <div class="benefits-list__pic-wrapper">
             <picture>
@@ -87,19 +88,26 @@
 
             <li class="benefits-list__item">
               <ul class="benefits-list__item">
-                <li class="benefits-list__item-tile availability">
+                <li class="benefits-list__item-tile availability availability--first">
                   <p class="availability__heading heading-medium">Жилье</p>
-                  <p class="availability__desc">Рекомендуем пожить в настоящем мотеле, все
+                  <p class="availability__desc availability__desc--first">Рекомендуем пожить в настоящем мотеле,все
                     как в кино</p>
                 </li>
-                <li class="benefits-list__item-tile availability">
-                  <p class="availability__heading availability__heading--burger heading-medium">Еда</p>
-                  <p class="availability__desc">Всегда заказывайте фирменный бургер, Вы не
+                <li class="benefits-list__item-tile availability availability--crooked-handed ">
+                  <p
+                    class="availability__heading availability__heading--burger  availability__heading--crooked-handed heading-medium">
+                    Еда</p>
+                  <p class="availability__desc availability__desc--crooked-handed ">Всегда
+                    заказывайте фирменный бургер,
+                    Вы не
                     разочаруетесь</p>
                 </li>
-                <li class="benefits-list__item-tile availability">
-                  <p class="availability__heading availability__heading--present heading-medium">Сувениры</p>
-                  <p class="availability__desc">Не только китайского, но и местного
+                <li class="benefits-list__item-tile availability availability--last">
+                  <p
+                    class="availability__heading availability__heading--present availability__heading--last heading-medium">
+                    Сувениры</p>
+                  <p class="availability__desc">Не только китайского,<br class="availability__desc--break"> но и
+                    местного
                     производства!</p>
                 </li>
               </ul>
@@ -108,10 +116,12 @@
 
         </li>
         <li class="benefits-list__item ">
-          <div class="benefits-list__item-tile dignity">
-            <p class="dignity__heading heading-medium text-color-invert">Там есть мост дьявола</p>
+          <div class="benefits-list__item-tile dignity dignity--first ">
+            <p class="dignity__heading dignity__heading--first heading-medium text-color-invert">Там есть мост
+              дьявола</p>
             <p class="dignity__number text-number text-color-invert">№2</p>
-            <p class="dignity__description text-color-invert">Да, по нему можно пройти! Если вы осмелитесь, конечно.</p>
+            <p class="dignity__description dignity__description--first text-color-invert">Да, по нему можно пройти! Если
+              вы осмелитесь, конечно.</p>
           </div>
           <div class="benefits-list__pic-wrapper benefits-list__pic-wrapper--left">
             <picture>
@@ -126,21 +136,24 @@
         </li>
         <li class="benefits-list__item benefits-list__item--slightly">
           <div class="benefits-list__item-tile dignity dignity--slightly">
-            <p class="dignity__heading heading-medium">Небольшая площадь</p>
+            <p class="dignity__heading dignity__heading--slightly heading-medium">Небольшая площадь</p>
             <p class="dignity__number text-number">№3</p>
-            <p class="dignity__description dignity__description--undeline">Все интересные места находятся очень близко
+            <p class="dignity__description dignity__description--slightly dignity__description--undeline">Все интересные
+              места находятся очень близко
             </p>
           </div>
           <div class="benefits-list__item-tile dignity dignity--slightly">
-            <p class="dignity__heading heading-medium">Красивая дорога</p>
+            <p class="dignity__heading dignity__heading--slightly heading-medium">Красивая дорога</p>
             <p class="dignity__number text-number">№4</p>
-            <p class="dignity__description  dignity__description--undeline">Ехать в седону из Лас-Вегаса совсем не
+            <p class="dignity__description dignity__description--slightly dignity__description--undeline">Ехать в седону
+              из Лас-Вегаса совсем не
               скучно!</p>
           </div>
           <div class="benefits-list__item-tile dignity dignity--slightly">
-            <p class="dignity__heading heading-medium">Мало туристов</p>
+            <p class="dignity__heading dignity__heading--slightly heading-medium">Мало туристов</p>
             <p class="dignity__number text-number">№5</p>
-            <p class="dignity__description">Большинство едет в гранд каньон и толпится там</p>
+            <p class="dignity__description dignity__description--slightly">Большинство едет в гранд каньон и толпится
+              там</p>
           </div>
         </li>
       </ul>
@@ -148,9 +161,11 @@
 
     <section class="content__contac-us contact-us">
       <h2 class="visually-hidden">Свяжитесь с нами</h2>
-      <div class="contact-us__choice info-block">
-        <p class="info-block__heading heading-Xlarge ">Заинтересовались?</p>
-        <p class="info-block__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+      <div class="contact-us__choice info-block info-block--contact">
+        <p class="info-block__heading info-block__heading--contact heading-Xlarge ">Заинтересовались?</p>
+        <p class="info-block__text info-block__text--contact">Укажите предполагаемые даты поездки,<br
+            class="info-block__text--break"> и мы покажем вам
+          лучшие предложения
           гостиниц в
           седоне</p>
         <a class="info-block__btn btn" href="#" target="_blank">Найти гостиницу</a>
@@ -204,8 +219,8 @@
       </a>
     </div>
   </footer>
-  <script src="js/toggle-menu.js"></script>
-  <script src="js/picturefill.js"></script>
+  <script src="js/script.min.js"></script>
+
 </body>
 
 </html>

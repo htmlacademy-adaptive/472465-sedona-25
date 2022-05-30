@@ -1,36 +1,47 @@
 .menu {
   @include reset-list-style;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   width: 100%;
   font-weight: bold;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    z-index: 0;
+    flex-direction: row;
+    background-color: $invert-color;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+}
+
+.menu :nth-of-type(2),
+.menu :nth-of-type(4n+2) {
+  @media (min-width: $tablet-width) {
+    margin-right: 20%;
+  }
+}
+
+.menu--scriptable {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   text-transform: uppercase;
   transition-duration: 0.4s;
   transition-property: top;
 
   @media (min-width: $tablet-width) {
     position: static;
-    height: 100%;
-    z-index: 0;
-    flex-direction: row;
-    background-color: $invert-color;
-    justify-content: space-between;
-    align-content: stretch;
   }
 }
 
 .menu--hide {
   top: rem(-2000);
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
 }
 
 .menu__item {
@@ -75,14 +86,6 @@
   }
 }
 
-.menu__item--chost {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-  }
-}
-
 .menu__item-link {
   display: inline-block;
   width: 100%;
@@ -95,8 +98,8 @@
 
   @media (min-width: $tablet-width) {
     color: $page-font-color;
-    font-size: initial;
-    padding: rem(5);
+    font-size: rem(14);
+    padding: rem(14) rem(5);
   }
 }
 
