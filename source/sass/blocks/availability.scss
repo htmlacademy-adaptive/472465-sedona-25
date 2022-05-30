@@ -81,13 +81,17 @@
 .availability__heading--present::before {
   background-image: url("../img/icons/present.svg");
   padding: rem(19);
+  @media (min-width: $tablet-width) {
+    padding: rem(34);
+  }
 }
 
 .availability__heading--last {
   margin-top: rem(6);
 
   @media (min-width: $tablet-width) {
-    margin-top: rem(46);
+    margin-top: rem(49);
+        margin-bottom: rem(18);
   }
 }
 
@@ -96,11 +100,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: rem(46);
+
   }
 }
 
 .availability__desc {
   text-align: left;
+  line-height: 1.59;
 
   @include block-width($mobile-width, 280px);
 
